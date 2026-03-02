@@ -4,10 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PyramidenReisen24 | VIP Ausflüge in Ägypten</title>
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
 body{
     font-family: Arial, sans-serif;
@@ -107,10 +103,6 @@ ul li::before{
     min-width:250px;
 }
 
-.button i{
-    margin-right:10px;
-}
-
 .button:hover{
     transform:translateY(-4px);
     box-shadow:0 6px 18px rgba(0,0,0,0.25);
@@ -124,6 +116,10 @@ ul li::before{
     background:#002b5c;
 }
 
+.email-btn::before{
+    content:"✉️ "; /* علامة البريد الإلكتروني */
+}
+
 .whatsapp-btn{
     background:#25D366;
 }
@@ -132,14 +128,11 @@ ul li::before{
     background:#1ebe5d;
 }
 
-.button-note{
-    margin-top:18px;
-    font-size:14px;
-    color:#666;
+.whatsapp-btn::before{
+    content:"🟢 "; /* علامة WhatsApp خضراء */
 }
 </style>
 </head>
-
 <body>
 
 <div class="container">
@@ -179,16 +172,24 @@ Wir organisieren alle Arten von Ausflügen: VIP Kulturtouren, Meerausflüge, Bug
 Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga • El Quseir • Marsa Alam • Kairo • Luxor • Assuan • Dendera • Alexandria
 </p>
 
-<p>
-Dank organisiertem Transfer können Sie an allen Ausflügen teilnehmen.
-</p>
-
 <p class="transfer-note">
 ✔ Zahlung vor Ort möglich
 </p>
 
 <div class="button-wrapper">
-
 <div class="button-group">
+<a class="button email-btn" href="mailto:pyramidenreisende@gmail.com">
+Anfrage per E-Mail
+</a>
+<a class="button whatsapp-btn" href="https://wa.me/201026134719">
+Jetzt per WhatsApp buchen
+</a>
+</div>
+<p class="transfer-note">
+Unverbindlich anfragen – Zahlung vor Ort nach dem Ausflug
+</p>
+</div>
 
-<a class="button email-btn" href="mailto:pyramidenreisende
+</div>
+</body>
+</html>
