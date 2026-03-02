@@ -4,159 +4,236 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PyramidenReisen24 | VIP Ausflüge in Ägypten</title>
+
+<!-- Meta Description -->
+<meta name="description" content="PyramidenReisen24: VIP Kulturtouren, Meerausflüge, Buggytouren & Quad-Ausflüge in Ägypten. Deutschsprachige Betreuung, flexible Zahlungen, sichere Transfers.">
+
+<!-- Canonical Link -->
+<link rel="canonical" href="https://www.pyramidenreisen.eu">
+
+<!-- OpenGraph Meta Tags -->
+<meta property="og:title" content="PyramidenReisen24 | VIP Ausflüge in Ägypten">
+<meta property="og:description" content="VIP Kulturtouren, Meerausflüge, Buggytouren & Quad-Ausflüge in Ägypten.">
+<meta property="og:url" content="https://www.pyramidenreisen.eu">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1572252009286-268acec5ca0a">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "PyramidenReisen24",
+  "description": "VIP Kulturtouren, Meerausflüge, Buggytouren & Quad-Ausflüge in Ägypten. Deutschsprachige Betreuung, flexible Zahlungen, sichere Transfers.",
+  "url": "https://www.pyramidenreisen.eu",
+  "telephone": "+201026134719",
+  "email": "pyramidenreisende@gmail.com",
+  "areaServed": "Egypt",
+  "availableLanguage": ["German"]
+}
+</script>
+
 <style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    color:#333;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
 }
 
-.container{
-    max-width:950px;
-    margin:50px auto;
-    background:#ffffff;
-    padding:35px 30px;
-    border-radius:14px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+.container {
+  max-width: 950px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-h1{
-    text-align:center;
-    color:#004080;
-    font-size:30px;
-    margin-bottom:5px;
+h1 {
+  text-align: center;
+  color: #004080;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 
-.review-box{
-    text-align:center;
-    margin-bottom:25px;
-    font-size:16px;
+nav {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
-.stars{
-    color:#f4b400;
-    font-size:22px;
+nav a {
+  margin: 0 10px;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.review-details{
-    color:#555;
-    font-size:14px;
-    margin-top:5px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-h2{
-    color:#004080;
-    margin-top:30px;
-    border-bottom:3px solid #25D366;
-    padding-bottom:6px;
+.review-box {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
-ul{
-    padding-left:20px;
+.stars {
+  color: #f4b400;
+  font-size: 22px;
 }
 
-ul li{
-    margin-bottom:10px;
-    list-style:none;
-    position:relative;
-    padding-left:28px;
+.review-details {
+  color: #555;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
-ul li::before{
-    content:"⭐";
-    position:absolute;
-    left:0;
+h2 {
+  color: #004080;
+  margin-top: 30px;
+  border-bottom: 3px solid #25D366;
+  padding-bottom: 6px;
 }
 
-.transfer-note{
-    margin-top:10px;
-    font-weight:bold;
-    color:#25D366;
+ul {
+  padding-left: 20px;
 }
 
-.button-wrapper{
-    margin-top:40px;
-    text-align:center;
+ul li {
+  margin-bottom: 10px;
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
 }
 
-.button-group{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    flex-wrap:wrap;
+ul li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
 }
 
-.button{
-    display:inline-block;
-    padding:16px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-    color:white;
-    transition:0.3s ease;
-    min-width:250px;
+.transfer-note {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #25D366;
 }
 
-.button:hover{
-    transform:translateY(-4px);
-    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+.button-wrapper {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.email-btn{
-    background:#004080;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-.email-btn:hover{
-    background:#002b5c;
+.button {
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s ease;
+  min-width: 250px;
 }
 
-.email-btn::before{
-    content:"✉️ ";
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-.whatsapp-btn{
-    background:#25D366;
+/* Email Button */
+.email-btn {
+  background: #004080;
 }
 
-.whatsapp-btn:hover{
-    background:#1ebe5d;
+.email-btn:hover {
+  background: #002b5c;
 }
 
-.whatsapp-btn::before{
-    content:"📞 "; /* رمز WhatsApp واضح */
+.email-btn::before {
+  content: "✉️ ";
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.whatsapp-btn::before {
+  content: "🟢 WhatsApp ";
+}
+
+.button-note {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .button {
+    width: 100%;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
 <h1>Willkommen bei PyramidenReisen24</h1>
 
+<nav>
+  <a href="#abenteuer">Ihr ägyptologisches Abenteuer</a> |
+  <a href="#ausfluege">Unsere Ausflüge</a> |
+  <a href="#transfers">Abholgebiete & Transfers</a>
+</nav>
+
 <div class="review-box">
-<div class="stars">★★★★★</div>
-<strong>Über 320 Bewertungen mit 5/5</strong>
-<div class="review-details">
-Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen
-</div>
+  <div class="stars">★★★★★</div>
+  <strong>Über 320 Bewertungen mit 5/5</strong>
+  <div class="review-details">
+    Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen
+  </div>
 </div>
 
-<h2>Ihr ägyptologisches Abenteuer</h2>
+<h2 id="abenteuer">Ihr ägyptologisches Abenteuer</h2>
 <p>
 Wir verbinden antike Schätze mit modernem Luxus und schaffen mit außergewöhnlichem Service eine perfekte Balance aus Komfort und Entdeckung.
 </p>
-
 <p>
 Wir organisieren alle Arten von Ausflügen: VIP Kulturtouren, Meerausflüge, Buggytouren und Quad-Ausflüge – individuell abgestimmt auf Ihre Wünsche.
 </p>
 
-<h2>Warum PyramidenReisen24?</h2>
+<h2 id="ausfluege">Warum PyramidenReisen24?</h2>
 <ul>
 <li>24/7 Kundenservice</li>
 <li>Deutschsprachige Betreuung</li>
@@ -167,9 +244,12 @@ Wir organisieren alle Arten von Ausflügen: VIP Kulturtouren, Meerausflüge, Bug
 <li>Exklusive Erlebnisse statt Massenabfertigung</li>
 </ul>
 
-<h2>Abholgebiete & Transfers</h2>
+<h2 id="transfers">Abholgebiete & Transfers</h2>
 <p>
 Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga • El Quseir • Marsa Alam • Kairo • Luxor • Assuan • Dendera • Alexandria
+</p>
+<p>
+Dank organisiertem Transfer können Sie an allen Ausflügen teilnehmen.
 </p>
 
 <p class="transfer-note">
@@ -178,14 +258,10 @@ Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga �
 
 <div class="button-wrapper">
 <div class="button-group">
-<a class="button email-btn" href="mailto:pyramidenreisende@gmail.com">
-✉️ Anfrage per E-Mail
-</a>
-<a class="button whatsapp-btn" href="https://wa.me/201026134719">
-📞 Jetzt per WhatsApp buchen
-</a>
+  <a class="button email-btn" href="mailto:pyramidenreisende@gmail.com">Anfrage per E-Mail</a>
+  <a class="button whatsapp-btn" href="https://wa.me/201026134719">Jetzt per WhatsApp buchen</a>
 </div>
-<p class="transfer-note">
+<p class="button-note">
 Unverbindlich anfragen – Zahlung vor Ort nach dem Ausflug
 </p>
 </div>
