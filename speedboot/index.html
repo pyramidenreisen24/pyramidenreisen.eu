@@ -3,68 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Speedboot Tour - Pyramiden Reisen</title>
-<meta name="description" content="Erleben Sie die aufregende Speedboot-Tour mit Pyramiden Reisen – Abenteuerliche Bootstouren und unvergessliche Momente in Ägypten.">
+<title>Speedboot Ausflug - Pyramiden Reisen</title>
+<meta name="description" content="Exklusiver Speedboot-Ausflug zu den geschützten Inseln, Orange Bay und Maladiven Sandbank. Mit oder ohne Schnorcheln, alles inklusive.">
 <style>
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
+  background: #f0f8ff;
+  color: #333;
 }
-header {
-  background-color: #0077cc; /* أزرق الأصل */
-  color: white;
-  padding: 50px 20px;
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: rgba(255,255,255,0.95);
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   text-align: center;
 }
+
 header h1 {
-  margin: 0;
-  font-size: 42px;
+  margin:0 0 25px 0;
+  font-size: 38px;
+  color: #004080;
 }
-main {
-  min-height: calc(100vh - 150px);
-  padding: 60px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.review-box {
+  font-size: 16px;
+  margin-bottom: 25px;
 }
+
+.stars {
+  color: #f4b400;
+  font-size: 22px;
+}
+
+.review-details {
+  color:#555;
+  font-size:14px;
+  margin-top:5px;
+}
+
 main p {
   font-size: 20px;
-  max-width: 800px;
-  margin: 0 auto 40px;
   line-height: 1.6;
+  margin-bottom: 40px;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
 .button {
-  display: inline-block;
-  padding: 20px 45px;
-  background-color: #0077cc; /* زر أزرق */
-  color: #fff;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 30px;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 22px;
-  transition: .25s;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 }
+
 .button:hover {
-  background-color: #005fa3;
   transform: translateY(-2px);
 }
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.email-btn {
+  background-color: #004080;
+}
+.email-btn:hover {
+  background-color: #002b5c;
+}
+
+.pay-note {
+  font-size: 16px;
+  font-weight: bold;
+  color: #198754;
+}
+
 @media(max-width:768px){
-  header h1 { font-size: 36px; }
+  header h1 { font-size: 28px; }
   main p { font-size: 18px; }
-  .button { font-size: 20px; padding: 16px 35px; }
+  .button { font-size: 16px; padding: 16px 25px; }
+  .pay-note { font-size: 14px; }
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-<header>
-  <h1>Speedboot Tour</h1>
-</header>
-<main>
-  <p>Erleben Sie die aufregende Speedboot-Tour mit <strong>Pyramiden Reisen</strong> – Abenteuerliche Bootstouren und unvergessliche Momente in Ägypten.</p>
-  <a class="button" href="https://wa.me/201026134719" target="_blank">Jetzt unverbindlich anfragen</a>
-</main>
+<div class="container">
+  <header>
+    <h1>Speedboot Ausflug</h1>
+  </header>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <strong>Über 320 Bewertungen mit 5/5</strong>
+    <div class="review-details">
+      Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen
+    </div>
+  </div>
+
+  <main>
+    <p>Erleben Sie unseren <strong>exklusiven Speedboot-Ausflug</strong> zu den geschützten Inseln, <strong>Orange Bay</strong> und der <strong>Maladiven Sandbank</strong>.  
+       Genießen Sie alle Inseln mit oder ohne <strong>Schnorcheln</strong> – alles inklusive für ein unvergessliches Abenteuer im Roten Meer!</p>
+
+    <div class="button-group">
+      <a class="button email-btn" href="mailto:pyramidenreisende@gmail.com">
+        <i class="fas fa-envelope"></i> Anfrage per E-Mail
+      </a>
+      <a class="button whatsapp-btn" href="https://wa.me/201026134719" target="_blank">
+        <i class="fab fa-whatsapp"></i> Jetzt per WhatsApp buchen
+      </a>
+    </div>
+
+    <div class="pay-note">Unverbindlich anfragen – Zahlung vor Ort nach dem Ausflug</div>
+  </main>
+</div>
 </body>
 </html>
