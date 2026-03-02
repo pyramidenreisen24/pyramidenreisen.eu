@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speedboot Ausflüge - PyramidenReisen24</title>
-<meta name="description" content="Exklusive Speedboot Ausflüge von PyramidenReisen24 zu Mahmya Insel, Orange Bay und Malediven Sandbank – mit oder ohne Schnorcheln.">
+<meta name="description" content="Exklusive Speedboot-Ausflüge mit PyramidenReisen24 zu Mahmya Insel, Orange Bay, Maladiven Sandbank und weiteren Inseln. Schnorcheln optional, alles inklusive.">
+
 <style>
 body {
   font-family: Arial, sans-serif;
@@ -15,10 +16,10 @@ body {
   text-align:center;
 }
 .container{
-  max-width:950px;
+  max-width:900px;
   margin:40px auto;
-  padding:30px;
   background:#ffffff;
+  padding:35px 30px;
   border-radius:12px;
   box-shadow:0 6px 20px rgba(0,0,0,0.15);
 }
@@ -35,8 +36,8 @@ h1{
   font-size:22px;
 }
 .review-details{
-  color:#555;
   font-size:14px;
+  color:#555;
   margin-top:5px;
 }
 h2{
@@ -46,12 +47,14 @@ h2{
   padding-bottom:6px;
 }
 ul{
-  list-style:none;
-  padding-left:0;
-  margin:20px 0;
+  padding-left:20px;
+  text-align:left;
+  display:inline-block;
+  margin-top:10px;
 }
 ul li{
   margin-bottom:10px;
+  list-style:none;
   position:relative;
   padding-left:28px;
 }
@@ -61,70 +64,75 @@ ul li::before{
   left:0;
 }
 .button-group{
+  margin-top:35px;
   display:flex;
   justify-content:center;
-  gap:15px;
   flex-wrap:wrap;
-  margin-top:35px;
+  gap:18px;
 }
 .button{
-  display:flex;
+  display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:8px;
-  padding:16px 28px;
+  padding:16px 35px;
   border-radius:10px;
-  font-weight:bold;
-  font-size:16px;
   text-decoration:none;
-  color:white;
+  font-weight:bold;
+  font-size:18px;
+  color:#fff;
+  min-width:220px;
   transition:0.3s ease;
-  min-width:230px;
 }
 .button:hover{
   transform:translateY(-3px);
   box-shadow:0 5px 15px rgba(0,0,0,0.25);
 }
 .email-btn{
-  background:#004080;
+  background-color:#004080;
 }
 .email-btn:hover{
-  background:#002b5c;
+  background-color:#002b5c;
+}
+.email-btn::before{
+  content:"✉️ ";
 }
 .whatsapp-btn{
-  background:#25D366;
+  background-color:#25D366;
 }
 .whatsapp-btn:hover{
-  background:#1ebe5d;
+  background-color:#1ebe5d;
 }
-/* WhatsApp official icon */
-.button img{
-  width:22px;
-  height:22px;
+.whatsapp-btn::before{
+  content:"📲 "; /* WhatsApp icon واضح */
 }
-p.note{
-  margin-top:25px;
+.note{
+  margin-top:20px;
   font-weight:bold;
   color:#25D366;
 }
 @media(max-width:768px){
   h1{ font-size:28px; }
-  .button{ width:100%; justify-content:center; font-size:16px; }
+  .button{ width:100%; font-size:18px; justify-content:center; }
+  ul{ display:block; text-align:left; }
 }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>Speedboot Ausflüge</h1>
+
   <div class="review-box">
     <div class="stars">★★★★★</div>
     <strong>Über 320 Bewertungen mit 5/5</strong>
-    <div class="review-details">Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen</div>
+    <div class="review-details">
+      Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen
+    </div>
   </div>
-  
-  <h2>Ihr Speedboot-Erlebnis</h2>
-  <p>Erleben Sie exklusive <strong>Speedboot Ausflüge</strong> zu <strong>Mahmya Insel, Orange Bay und Malediven Sandbank</strong> – alle Inseln mit oder ohne Schnorcheln, alles inklusive.</p>
-  
+
+  <h2>Ihr exklusives Speedboot-Erlebnis</h2>
+  <p>Erleben Sie exklusive Speedboot-Ausflüge zur <strong>Mahmya Insel</strong>, <strong>Orange Bay</strong>, <strong>Maladiven Sandbank</strong> und allen weiteren Inseln – mit oder ohne Schnorcheln, alles inklusive!</p>
+
   <h2>Warum PyramidenReisen24?</h2>
   <ul>
     <li>24/7 Kundenservice</li>
@@ -135,19 +143,15 @@ p.note{
     <li>Maximale Flexibilität</li>
     <li>Exklusive Erlebnisse statt Massenabfertigung</li>
   </ul>
-  
+
   <h2>Abholgebiete & Transfers</h2>
   <p>Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga • El Quseir • Marsa Alam • Kairo • Luxor • Assuan • Dendera • Alexandria</p>
-  
+
   <div class="button-group">
-    <a href="mailto:pyramidenreisende@gmail.com" class="button email-btn">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-Mail Icon"> Anfrage per E-Mail
-    </a>
-    <a href="https://wa.me/201026134719" class="button whatsapp-btn" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon"> Jetzt per WhatsApp buchen
-    </a>
+    <a href="mailto:pyramidenreisende@gmail.com" class="button email-btn">Anfrage per E-Mail</a>
+    <a href="https://wa.me/201026134719" class="button whatsapp-btn" target="_blank">Jetzt per WhatsApp buchen</a>
   </div>
-  
+
   <p class="note">Unverbindlich anfragen – Zahlung vor Ort nach dem Ausflug</p>
 </div>
 </body>
