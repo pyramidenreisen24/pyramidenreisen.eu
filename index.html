@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ausflüge Hurghada & Marsa Alam | PyramidenReisen24</title>
-<meta name="description" content="Ausflüge ab Hurghada & Marsa Alam zu fairen Preisen. Kairo, Luxor, Quad Safari, Buggytouren, Massage, Spa und Schnorchelausflüge im Roten Meer. Deutschsprachiger Service und Hotelabholung inklusive.">
+<meta name="description" content="Ausflüge ab Hurghada & Marsa Alam zu fairen Preisen. Kairo, Luxor, Quad Safari, Buggytouren, Speedboot, Massage, Spa und Schnorchelausflüge im Roten Meer. Deutschsprachiger Service und Hotelabholung inklusive.">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
@@ -14,23 +14,44 @@ body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;color:#333;scroll-
 header{background:linear-gradient(to bottom,#0c3c60,#003060);color:white;text-align:center;padding:50px 20px;position: relative;}
 h1{margin:0;font-size:32px;}
 section{max-width:1000px;margin:auto;padding:40px 20px;background:white;margin-top:20px;border-radius:8px;}
-h2{color:#0c3c60;}
-ul{list-style:none;padding:0;}
-ul li{padding:10px 0;font-size:18px;}
-.prices li{font-size:20px;font-weight:bold;}
-.email-btn{display:block;text-align:center;background:#004080;color:white;padding:18px;font-size:20px;text-decoration:none;border-radius:6px;margin-top:20px;}
-.email-btn:hover{background:#002040;}
-.email-btn i{margin-right:8px;text-shadow:1px 1px 2px rgba(0,0,0,0.5);}
-.whatsapp{display:block;text-align:center;background:#25D366;color:white;padding:18px;font-size:20px;text-decoration:none;border-radius:6px;margin-top:20px;}
-.whatsapp:hover{background:#1ebe5b;}
-.steps li{padding:8px 0;font-size:18px;}
-footer{text-align:center;padding:30px;font-size:14px;color:#666;}
-.whatsapp i,.email-btn i{margin-right:8px;}
-.scroll-arrow{text-align:center;margin-top:20px;font-size:24px;color:#0c3c60;cursor:pointer;animation:bounce 1.5s infinite;}
-@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(8px);}60%{transform:translateY(4px);}}
+h2{color:#0c3c60; margin-bottom:20px;}
+.steps li, ul li{padding:8px 0;font-size:18px;line-height:2;}
+
+/* بطاقات الرحلات مع ألوان متدرجة */
+.card-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:20px;}
+.card{border-radius:12px;padding:20px;flex:1 1 260px;max-width:280px;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;transition:transform 0.3s ease, box-shadow 0.3s ease;}
+.card:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,0.15);}
+.card i{font-size:40px;margin-bottom:12px; display:block;color:white;}
+.card h3{font-size:20px;margin-bottom:10px;color:white;}
+.card p{font-weight:bold;font-size:18px;color:white; margin:0;}
+
+/* ألوان متدرجة لكل رحلة */
+.card-quad{background:linear-gradient(135deg,#25D366,#198754);}
+.card-kairo{background:linear-gradient(135deg,#ff6f00,#ff9e0d);}
+.card-luxor{background:linear-gradient(135deg,#0066cc,#3399ff);}
+.card-boot{background:linear-gradient(135deg,#009999,#33cccc);}
+.card-buggy{background:linear-gradient(135deg,#cc3300,#ff6600);}
+.card-spa{background:linear-gradient(135deg,#9933cc,#cc66ff);}
+.card-speedboot{background:linear-gradient(135deg,#ff0066,#ff3399);}
+
+/* الأزرار */
+.email-btn, .whatsapp{display:block;text-align:center;color:white;padding:18px;font-size:20px;text-decoration:none;border-radius:6px;margin-top:20px;transition: all 0.3s ease;}
+.email-btn{background:#004080;}
+.email-btn:hover{background:#002040; filter: brightness(1.1); transform: translateY(-2px);}
+.whatsapp{background:#25D366;}
+.whatsapp:hover{background:#1ebe5b; filter: brightness(1.1); transform: translateY(-2px);}
+.email-btn i, .whatsapp i{margin-right:8px;text-shadow:1px 1px 2px rgba(0,0,0,0.3);}
+
+/* سهم التمرير */
+.scroll-arrow{text-align:center;margin-top:20px;font-size:24px;color:#0c3c60;cursor:pointer;animation:bounce 1.2s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+
+/* زر WhatsApp عائم */
 .floating-whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;border-radius:50px;padding:16px 20px;font-size:20px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:1000;display:flex;align-items:center;gap:10px;transition:0.3s;animation:pulse 2s infinite;}
 .floating-whatsapp:hover{background:#1ebe5b;transform:translateY(-2px);}
 @keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+
+footer{text-align:center;padding:30px;font-size:14px;color:#666;}
 </style>
 </head>
 <body>
@@ -38,9 +59,7 @@ footer{text-align:center;padding:30px;font-size:14px;color:#666;}
 <header id="header">
 <h1>PyramidenReisen24</h1>
 <p>Ab Hurghada & Marsa Alam – Exklusive Ausflüge mit deutschsprachigem Service</p>
-<a class="email-btn" href="mailto:pyramidenreisende@gmail.com">
-<i class="fas fa-envelope"></i> Jetzt unverbindlich anfragen
-</a>
+<a class="email-btn" href="mailto:pyramidenreisende@gmail.com"><i class="fas fa-envelope"></i> Jetzt unverbindlich anfragen</a>
 <p>Schnelle Antwort in wenigen Minuten – keine Vorauszahlung nötig.</p>
 <div class="scroll-arrow" data-target="section1"><i class="fas fa-chevron-down"></i></div>
 </header>
@@ -53,16 +72,17 @@ footer{text-align:center;padding:30px;font-size:14px;color:#666;}
 </section>
 
 <section class="prices" id="section2">
-<h2>Beliebte Ausflüge ab Hurghada & Marsa Alam – transparente Preise</h2>
-<ul>
-<li>🏜 Quad Safari in der Wüste – ab 25€</li>
-<li>🏛 Kairo Tagesausflug zu den Pyramiden von Gizeh – ab 89€</li>
-<li>🏺 Luxor – Tempel & Tal der Könige – ab 79€</li>
-<li>🌊 Boots- & Schnorchelausflüge im Roten Meer – ab 30€</li>
-<li>🚙 Buggytour – ab 50€</li>
-<li>💆 Massage, Spa und Hammam – ab 25€</li>
-</ul>
-<p>Alle Ausflüge inklusive Hotelabholung ab Hurghada oder Marsa Alam und deutschsprachiger Betreuung.</p>
+<h2>Beliebte Ausflüge ab Hurghada & Marsa Alam</h2>
+<div class="card-container">
+<div class="card card-quad"><i class="fas fa-mountain"></i><h3>Quad Safari</h3><p>ab 25€</p></div>
+<div class="card card-kairo"><i class="fas fa-landmark"></i><h3>Kairo Tagesausflug</h3><p>ab 89€</p></div>
+<div class="card card-luxor"><i class="fas fa-archway"></i><h3>Luxor – Tempel & Tal der Könige</h3><p>ab 79€</p></div>
+<div class="card card-boot"><i class="fas fa-ship"></i><h3>Boots- & Schnorchelausflüge</h3><p>ab 30€</p></div>
+<div class="card card-buggy"><i class="fas fa-car-side"></i><h3>Buggytour</h3><p>ab 50€</p></div>
+<div class="card card-spa"><i class="fas fa-spa"></i><h3>Massage, Spa & Hammam</h3><p>ab 25€</p></div>
+<div class="card card-speedboot"><i class="fas fa-water"></i><h3>Speedboot „nach Wunsch“</h3><p>ab 60€</p></div>
+</div>
+<p style="text-align:center; margin-top:15px;">Alle Ausflüge inklusive Hotelabholung ab Hurghada oder Marsa Alam und deutschsprachiger Betreuung.</p>
 <div class="scroll-arrow" data-target="section3"><i class="fas fa-chevron-down"></i></div>
 </section>
 
@@ -86,22 +106,23 @@ footer{text-align:center;padding:30px;font-size:14px;color:#666;}
 
 <section id="section4">
 <h2>Warum Gäste uns vertrauen</h2>
-<ul>
+<ul style="list-style:none;padding:0;font-size:18px;line-height:2;">
 <li>⭐ Langjährige Erfahrung mit Ausflügen in Hurghada & Marsa Alam</li>
 <li>⭐ Persönlicher Service statt anonymer Massentourismus</li>
 <li>⭐ Echtzeit Support und individuelle Beratung</li>
+<li>⭐ Bezahlung bequem vor Ort nach dem Ausflug</li>
 </ul>
 <div class="scroll-arrow" data-target="section5"><i class="fas fa-chevron-down"></i></div>
 </section>
 
 <section id="section5">
 <h2>So einfach funktioniert die Buchung</h2>
-<ol class="steps" style="list-style:none;padding:0;font-size:18px;line-height:2;">
-<li>Anfrage per E-Mail oder WhatsApp senden</li>
-<li>Termin bestätigen</li>
-<li>Abholung direkt vom Hotel</li>
-<li>Bezahlung bequem vor Ort nach dem Ausflug</li>
-</ol>
+<ul style="list-style:none;padding:0;font-size:18px;line-height:2;">
+<li>✉️ Anfrage per E-Mail senden oder <i class="fab fa-whatsapp"></i> WhatsApp Nachricht senden</li>
+<li>✅ Termin bestätigen</li>
+<li>🏨 Abholung direkt vom Hotel</li>
+<li>💵 Bezahlung bequem vor Ort nach dem Ausflug</li>
+</ul>
 <div class="scroll-arrow" data-target="section6"><i class="fas fa-chevron-down"></i></div>
 </section>
 
