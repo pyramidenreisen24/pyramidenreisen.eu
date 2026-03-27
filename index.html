@@ -65,15 +65,23 @@ h1{margin:0;font-size:34px;}
 h2,h3{color:#0b3a5a;}
 section{max-width:1100px;margin:30px auto;background:#fff;padding:40px;border-radius:12px;}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.card{background:#0b3a5a;color:#fff;padding:25px;border-radius:12px;text-align:center;transition:0.3s;}
-.card:hover{background:#164060;}
+
+/* البطاقات مع تأثير hover احترافي */
+.card {
+  background:#0b3a5a;
+  color:#fff;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #0b3a5a, #164060);
+}
 .card a{color:#fff;text-decoration:none;font-weight:bold;}
 .card a:hover{text-decoration:underline;}
-.white-box{margin-top:25px;display:inline-block;background:#fff;padding:14px 26px;border-radius:12px;}
-.white-box a{color:#0b3a5a;text-decoration:none;font-weight:bold;}
-.white-box a:hover{text-decoration:underline;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;}
-.faq h3{margin-bottom:5px;color:#0b3a5a;}
 
 /* روابط Pyramiden & Reisehinweise */
 a.white-link {
@@ -85,6 +93,16 @@ a.white-link:hover {
   color: #ff9900;
 }
 
+/* أزرار و CTA */
+.white-box{margin-top:25px;display:inline-block;background:#fff;padding:14px 26px;border-radius:12px;}
+.white-box a{color:#0b3a5a;text-decoration:none;font-weight:bold;}
+.white-box a:hover{text-decoration:underline;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;font-weight:bold;text-decoration:none;}
+
+/* FAQ */
+.faq h3{margin-bottom:5px;color:#0b3a5a;}
+
+/* Responsive */
 @media (max-width:992px){.grid{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:600px){.grid{grid-template-columns:1fr;} header{padding:40px 15px;} h1{font-size:26px;} section{padding:25px;}}
 </style>
