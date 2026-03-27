@@ -40,10 +40,18 @@ section{max-width:1100px;margin:30px auto;background:#fff;padding:40px;border-ra
   box-shadow: 0 15px 35px rgba(0,0,0,0.35);
   background: linear-gradient(135deg, #0b3a5a, #164060);
 }
-.card a{color:#fff;text-decoration:none;font-weight:bold;}
-.card a:hover{text-decoration:underline;}
 
-/* روابط Pyramiden & Reisehinweise */
+/* روابط داخل البطاقات بدون خط */
+.card a {
+  color:#fff;
+  text-decoration:none; /* إزالة الخط */
+  font-weight:bold;
+}
+.card a:hover {
+  text-decoration:none; /* يبقى بدون خط عند hover */
+}
+
+/* روابط Pyramiden & Reisehinweise بخط */
 a.white-link {color: #fff; text-decoration: underline; transition: color 0.3s;}
 a.white-link:hover {color: #ff9900;}
 
@@ -75,7 +83,7 @@ Premium Hurghada Ausflüge mit Inseln, Schnorcheln, Speedboot, Kairo, Luxor und 
 Mehr über Sehenswürdigkeiten wie die 
 <a href="https://de.wikipedia.org/wiki/Pyramiden_von_Gizeh" target="_blank" rel="nofollow noopener" class="white-link">Pyramiden von Gizeh</a> 
 oder aktuelle 
-<a href="https://www.auswaertiges-amt.de/de/service/laender/aegypten-node/aegyptensicherheit/287952" target="_blank" rel="nofollow noopener" class="white-link">Reisehinweise für Ägypten</a>.
+<a href="https://www.auswaertiges-amt.de/de/service/vertretungen/aegypten/237378" target="_blank" rel="nofollow noopener" class="white-link">Reisehinweise für Ägypten</a>.
 </p>
 </header>
 
@@ -138,14 +146,11 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       const index = Array.from(cards).indexOf(entry.target);
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, index * 150); // تأخير 150ms لكل بطاقة
+      setTimeout(() => { entry.target.classList.add('visible'); }, index * 150);
       observer.unobserve(entry.target);
     }
   });
 },{threshold:0.2});
-
 cards.forEach(card => observer.observe(card));
 </script>
 
