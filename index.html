@@ -29,6 +29,7 @@
 body{margin:0;font-family:Arial;background:#f4f6f8;color:#222;}
 header{background:#0b3a5a;color:#fff;text-align:center;padding:60px 20px;}
 h1{margin:0;font-size:34px;}
+h2,h3{color:#0b3a5a;}
 section{max-width:1100px;margin:30px auto;background:#fff;padding:40px;border-radius:12px;}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .card{background:#0b3a5a;color:#fff;padding:25px;border-radius:12px;text-align:center;transition:0.3s;}
@@ -39,13 +40,14 @@ section{max-width:1100px;margin:30px auto;background:#fff;padding:40px;border-ra
 .white-box a{color:#0b3a5a;text-decoration:none;font-weight:bold;}
 a{color:#0b3a5a;text-decoration:underline;font-weight:bold;}
 a:hover{color:#FF6B00;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;}
+img{max-width:100%;border-radius:12px;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
 .faq h3{margin-bottom:5px;color:#0b3a5a;}
 @media (max-width:992px){.grid{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:600px){.grid{grid-template-columns:1fr;}header{padding:40px 15px;}h1{font-size:26px;}section{padding:25px;}}
 </style>
 
-<!-- 🔥 TOURIST SERVICE SCHEMA -->
+<!-- TouristService Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -58,14 +60,19 @@ a:hover{color:#FF6B00;}
 }
 </script>
 
-<!-- 🔥 FAQ SCHEMA -->
+<!-- FAQ Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {"@type":"Question","name":"Wie kann ich Hurghada Ausflüge buchen?","acceptedAnswer":{"@type":"Answer","text":"Alle Hurghada Ausflüge können direkt über WhatsApp oder E-Mail gebucht werden."}},
-    {"@type":"Question","name":"Gibt es versteckte Kosten?","acceptedAnswer":{"@type":"Answer","text":"Nein, alle Preise sind transparent ohne versteckte Gebühren."}}
+    {"@type":"Question","name":"Gibt es versteckte Kosten?","acceptedAnswer":{"@type":"Answer","text":"Nein, alle Preise sind transparent ohne versteckte Gebühren."}},
+    {"@type":"Question","name":"Welche Ausflüge sind am beliebtesten?","acceptedAnswer":{"@type":"Answer","text":"Beliebt sind Speedboot, Insel-Touren, Schnorcheln, Kairo und Luxor Ausflüge."}},
+    {"@type":"Question","name":"Ist Hotelabholung inklusive?","acceptedAnswer":{"@type":"Answer","text":"Ja, alle Ausflüge beinhalten kostenlose Abholung von Ihrem Hotel in Hurghada."}},
+    {"@type":"Question","name":"Wie lange dauern die Ausflüge?","acceptedAnswer":{"@type":"Answer","text":"Die Dauer variiert je nach Tour: Insel-Touren 4-6 Stunden, Tagesausflüge nach Kairo oder Luxor 10-12 Stunden."}},
+    {"@type":"Question","name":"Welche Sprache wird bei den Ausflügen gesprochen?","acceptedAnswer":{"@type":"Answer","text":"Alle Touren bieten deutschsprachigen Service an."}},
+    {"@type":"Question","name":"Kann ich spezielle Wünsche äußern?","acceptedAnswer":{"@type":"Answer","text":"Individuelle Wünsche wie private Bootstouren oder spezielle Transfers können vorab angefragt werden."}}
   ]
 }
 </script>
@@ -75,7 +82,6 @@ a:hover{color:#FF6B00;}
 <body>
 
 <header>
-
 <h1>Hurghada Ausflüge & Touren im Roten Meer</h1>
 
 <div class="white-box">
@@ -93,11 +99,9 @@ oder aktuelle
 </header>
 
 <section>
-
 <h2>Beliebte Hurghada Ausflüge</h2>
 
 <div class="grid">
-
 <div class="card"><a href="https://www.pyramidenreisen.eu/mahmya-privates-speedboot.html">🏝 Mahmya Insel</a></div>
 <div class="card"><a href="https://www.pyramidenreisen.eu/speedboot/">🚤 Speedboot</a></div>
 <div class="card"><a href="https://www.pyramidenreisen.eu/kairo-ausflug-pyramiden-grand-museum.html">🏛 Kairo</a></div>
@@ -105,20 +109,12 @@ oder aktuelle
 <div class="card"><a href="https://www.pyramidenreisen.eu/3-stunden-quad.html">🚙 Quad</a></div>
 <div class="card"><a href="https://www.pyramidenreisen.eu/buggytour/">🏜 Buggy</a></div>
 <div class="card spa"><a href="https://www.pyramidenreisen.eu/hammam-massage-und-spa/">💆 Spa</a></div>
-
 </div>
-
 </section>
 
-<!-- 🔥 TOP RANKING CONTENT -->
 <section>
-
-<h2>Die besten Hurghada Ausflüge 2026 für deutsche Urlauber</h2>
-
-<p>
-Hurghada ist eines der beliebtesten Reiseziele in Ägypten. Viele deutsche Touristen suchen nach sicheren und hochwertigen Ausflügen mit deutschsprachigem Service.
-</p>
-
+<h2>Top Ranking Content 2026</h2>
+<p>Hurghada ist eines der beliebtesten Reiseziele in Ägypten. Viele deutsche Touristen suchen nach sicheren und hochwertigen Ausflügen mit deutschsprachigem Service.</p>
 <h3>🌴 Aktivitäten</h3>
 <ul>
 <li>Schnorcheln im Roten Meer</li>
@@ -126,45 +122,27 @@ Hurghada ist eines der beliebtesten Reiseziele in Ägypten. Viele deutsche Touri
 <li>Wüstensafari</li>
 <li>Tagesausflüge nach Kairo oder Luxor</li>
 </ul>
-
 <h3>💡 Tipps</h3>
-<p>
-Beste Reisezeit: Oktober bis Mai. Planen Sie Ihre Touren frühzeitig.
-</p>
-
-<p>
-Standort ansehen: 
-<a href="https://www.google.com/maps/place/Hurghada" target="_blank">Hurghada auf Google Maps</a>
-</p>
-
+<p>Beste Reisezeit: Oktober bis Mai. Planen Sie Ihre Touren frühzeitig.</p>
+<p>Standort ansehen: <a href="https://www.google.com/maps/place/Hurghada" target="_blank">Hurghada auf Google Maps</a></p>
 </section>
 
-<!-- 🔥 FAQ SECTION -->
 <section class="faq">
-
 <h2>Häufig gestellte Fragen</h2>
-
 <h3>Wie kann ich Hurghada Ausflüge buchen?</h3>
 <p>Alle Ausflüge können direkt über WhatsApp oder E-Mail gebucht werden. Schnelle Bestätigung inklusive.</p>
-
 <h3>Gibt es versteckte Kosten?</h3>
 <p>Nein, alle Preise sind transparent ohne zusätzliche Gebühren.</p>
-
 <h3>Welche Ausflüge sind am beliebtesten?</h3>
 <p>Beliebt sind Speedboot, Insel-Touren, Schnorcheln, Kairo und Luxor Ausflüge.</p>
-
 <h3>Ist Hotelabholung inklusive?</h3>
 <p>Ja, alle Ausflüge beinhalten kostenlose Abholung von Ihrem Hotel in Hurghada.</p>
-
 <h3>Wie lange dauern die Ausflüge?</h3>
 <p>Die Dauer variiert je nach Tour: Insel-Touren 4-6 Stunden, Tagesausflüge nach Kairo oder Luxor 10-12 Stunden.</p>
-
 <h3>Welche Sprache wird bei den Ausflügen gesprochen?</h3>
 <p>Alle Touren bieten deutschsprachigen Service an.</p>
-
 <h3>Kann ich spezielle Wünsche äußern?</h3>
-<p>Ja, individuelle Wünsche wie private Bootstouren oder spezielle Transfers können vorab angefragt werden.</p>
-
+<p>Individuelle Wünsche wie private Bootstouren oder spezielle Transfers können vorab angefragt werden.</p>
 </section>
 
 <a class="whatsapp" href="https://wa.me/201026134719">WhatsApp buchen</a>
