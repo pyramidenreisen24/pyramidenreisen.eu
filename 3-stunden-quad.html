@@ -3,68 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quad-Ausflug Makadi – Abenteuer ohne Beduinen Dorf</title>
-<meta name="description" content="Erleben Sie einen Quad-Ausflug in Makadi Bay direkt am Roten Meer. Kein Beduinen Dorf, nur Action, Sanddünen, Meerblick und komplette Transfers inklusive.">
+<title>Quad-Ausflug Makadi – Abenteuer & Wüstensafari | Pyramiden Reisen24</title>
+<meta name="description" content="Quad-Ausflug in Makadi Bay am Roten Meer – Action, Sanddünen, Meerblick und hochwertige Buggys. Deutschsprachiger Service & alle Transfers inklusive.">
 <link rel="canonical" href="https://www.pyramidenreisen.eu/quad-ausflug-makadi">
 
 <!-- OpenGraph -->
-<meta property="og:title" content="Quad-Ausflug Makadi – Abenteuer ohne Beduinen Dorf">
-<meta property="og:description" content="Quad-Ausflug in Makadi Bay ohne Beduinen Dorf. Sanddünen, Meerblick, Action pur, alles inklusive!">
+<meta property="og:title" content="Quad-Ausflug Makadi – Abenteuer & Wüstensafari">
+<meta property="og:description" content="Actionreiche Quad-Ausflüge in Makadi Bay. Hochwertige Buggys, Wüstensafari & Meerblick.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.pyramidenreisen.eu/quad-ausflug-makadi">
 <meta property="og:image" content="https://images.unsplash.com/photo-1592928306363-6d4e3f3b6c0a">
 
-<!-- Schema.org JSON-LD -->
+<!-- Schema.org JSON-LD FAQ + Reviews -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TouristTrip",
-  "name": "Quad-Ausflug Makadi",
-  "description": "Quad-Ausflug in Makadi Bay direkt am Roten Meer ohne Beduinen Dorf. Sanddünen, Meerblick, Action pur, Transfer inklusive.",
-  "touristType": "Abenteuerurlaub",
-  "provider": {
-    "@type": "TravelAgency",
-    "name": "PyramidenReisen24",
-    "url": "https://www.pyramidenreisen.eu"
+  "@type": "TouristService",
+  "name": "Pyramiden Reisen24",
+  "url": "https://www.pyramidenreisen.eu/",
+  "telephone": "+201026134719",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hurghada",
+    "addressCountry": "EG"
   },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.pyramidenreisen.eu/quad-ausflug-makadi",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock"
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "500"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Michael S." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Sehr gut organisiert und deutschsprachiger Service. Absolut empfehlenswert!"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Anna K." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Perfekte Quad-Tour in Makadi Bay. Alles pünktlich und sehr freundlich."
+    }
+  ],
   "mainEntity": [
     {
       "@type": "Question",
       "name": "Wie kann ich den Quad-Ausflug buchen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Direkt über WhatsApp oder E-Mail beim Anbieter."
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": "Buchen Sie direkt über WhatsApp oder E-Mail. Schnelle Bestätigung garantiert." }
     },
     {
       "@type": "Question",
-      "name": "Welche Sicherheitsmaßnahmen gibt es?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Alle Buggys sind geprüft, Helme inklusive, deutschsprachige Betreuung."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Gibt es versteckte Kosten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nein, alle Preise sind transparent und inkl. Transfer."
-      }
+      "name": "Sind alle Kosten inklusive?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, inklusive Hoteltransfer, Ausrüstung und erfahrenen Guides." }
     }
   ]
 }
@@ -72,227 +63,110 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f8ff;
-    text-align: center;
-    color: #333;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f6f8;
+  color:#222;
 }
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 35px 25px;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+header {
+  background:#0b3a5a;
+  color:#fff;
+  text-align:center;
+  padding:70px 20px;
 }
-h1 {
-    font-size: 32px;
-    color: #004080;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
-}
-
-/* ⭐ Stars Animation */
-@keyframes twinkle {
-  0%, 100% { color: #f4b400; transform: scale(1); }
-  50% { color: #ffd700; transform: scale(1.2); }
-}
-.stars span {
-  display: inline-block;
-  animation: twinkle 1.5s infinite;
-}
-.stars span:nth-child(2) { animation-delay: 0.2s; }
-.stars span:nth-child(3) { animation-delay: 0.4s; }
-.stars span:nth-child(4) { animation-delay: 0.6s; }
-.stars span:nth-child(5) { animation-delay: 0.8s; }
-
-.review-box {
-    margin: 15px 0 30px;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
-}
-.review-details {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 40px;
-    color: #004080;
-    border-bottom: 3px solid #25D366;
-    padding-bottom: 6px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
-}
-
-p, ul {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
-}
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    display: inline-block;
-    margin-top: 10px;
-}
-ul li {
-    margin: 10px 0;
-    position: relative;
-    padding-left: 28px;
-}
-ul li::before {
-    content: "⭐";
-    position: absolute;
-    left: 0;
-}
-
-.button-group {
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
-}
-
-.button {
-    display: inline-block;
-    padding: 16px 35px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    min-width: 220px;
-    transition: 0.3s ease;
-}
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-}
-.email-btn {
-    background-color: #004080;
-}
-.email-btn:hover { background-color: #002b5c; }
-.email-btn::before { content: "✉️ "; }
-
-.whatsapp-btn {
-    background-color: #25D366;
-}
-.whatsapp-btn:hover { background-color: #1ebe5d; }
-.whatsapp-btn svg {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-@media(max-width:768px){
-    h1 { font-size: 26px; }
-    .button { width: 100%; font-size: 18px; }
-    ul { display: block; text-align: left; }
-}
-
-/* Scroll Reveal Active */
-.reveal.active {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
+h1 { margin:0; font-size:36px; }
+h2,h3 { color:#0b3a5a; }
+section { max-width:1100px; margin:30px auto; background:#fff; padding:40px; border-radius:12px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.card { background:#0b3a5a; color:#fff; padding:25px; border-radius:12px; text-align:center; transition:0.3s; }
+.card:hover { transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.25); }
+.card a { color:#fff; text-decoration:none; font-weight:bold; }
+.white-box { margin-top:25px; display:inline-block; background:#fff; padding:14px 26px; border-radius:12px; }
+.white-box a { color:#0b3a5a; text-decoration:none; font-weight:bold; }
+.white-box a:hover { text-decoration:underline; }
+.whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:14px 20px; border-radius:50px; text-decoration:none; font-weight:bold; }
+.stars { font-size:28px; color:#f4b400; margin:10px 0; }
+.counter { font-size:24px; font-weight:bold; color:#004080; }
+.button { display:inline-block; padding:16px 35px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:18px; color:#fff; background:#004080; transition:0.3s; }
+.button:hover { transform:translateY(-3px); box-shadow:0 5px 15px rgba(0,0,0,0.25); }
+.button.whatsapp-btn { background:#25D366; }
+ul { list-style:none; padding:0; margin-top:20px; text-align:left; display:inline-block; }
+ul li { margin:10px 0; position:relative; padding-left:28px; font-size:18px; }
+ul li::before { content:"⭐"; position:absolute; left:0; }
+@media(max-width:992px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.grid{grid-template-columns:1fr;} header{padding:40px 15px;} h1{font-size:28px;} section{padding:25px;}}
 </style>
 </head>
 <body>
-<div class="container">
-    <h1 class="reveal">🏜️ Quad-Ausflug Makadi – Hochwertige Buggys direkt am Meer</h1>
 
-    <div class="review-box reveal">
-        <div class="stars">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <div>
-            Über <span id="ratingCounter">500</span> Bewertungen mit 5/5 Sternen
-        </div>
-        <div class="review-details">
-            Zusätzlich 1 Bewertung mit 4/5 – Transparenz & echte Kundenerfahrungen
-        </div>
-    </div>
+<header>
+<h1>🏜 Quad-Ausflug Makadi – Hochwertige Buggys & Wüstensafari</h1>
+<div class="white-box">
+<a href="mailto:pyramidenreisende@gmail.com">✉ Jetzt unverbindlich anfragen</a>
+</div>
+<p style="margin-top:20px;">
+Actionreiche Quad-Touren in Makadi Bay am Roten Meer. Hochwertige Buggys, Meerblick, Fotostopps und voller Transferservice inklusive.
+</p>
+</header>
 
-    <h2 class="reveal">Ihr exklusives Quad-Erlebnis</h2>
-    <p class="reveal">
-        Actionreiche Quad-Ausflüge in der Makadi-Wüste am Roten Meer. 
-        Hochwertige, gepflegte Buggys – kein veraltetes Equipment. 
-        Wüstensafari mit Meerblick, fotogene Stopps und voller Transferservice inklusive.
-    </p>
+<section>
+<h2>🌟 Bewertungen</h2>
+<div class="stars" id="star-animation">★★★★★</div>
+<div class="counter" id="review-counter">500</div>
+<p>Über <span id="counter-text">500</span> zufriedene Kunden</p>
+</section>
 
-    <h2 class="reveal">Warum PyramidenReisen24?</h2>
-    <ul class="reveal">
-        <li>24/7 Kundenservice</li>
-        <li>Deutschsprachige Betreuung</li>
-        <li>Höchste Qualitäts- und Sicherheitsstandards</li>
-        <li>Faire Preise ohne versteckte Kosten</li>
-        <li>Keine Kaffeefahrten</li>
-        <li>Maximale Flexibilität</li>
-        <li>Exklusive Erlebnisse statt Massenabfertigung</li>
-    </ul>
+<section>
+<h2>🏜 Quad-Erlebnis</h2>
+<div class="grid">
+<div class="card"><a href="#">24/7 Kundenservice</a></div>
+<div class="card"><a href="#">Deutschsprachige Betreuung</a></div>
+<div class="card"><a href="#">Höchste Qualitätsstandards</a></div>
+<div class="card"><a href="#">Faire Preise & transparente Kosten</a></div>
+<div class="card"><a href="#">Keine Kaffeefahrten</a></div>
+<div class="card"><a href="#">Maximale Flexibilität</a></div>
+<div class="card"><a href="#">Exklusive Erlebnisse</a></div>
+</div>
+</section>
 
-    <h2 class="reveal">Abholgebiete & Transfers</h2>
-    <p class="reveal">Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga • El Quseir • Marsa Alam • Kairo • Luxor • Assuan • Dendera • Alexandria</p>
+<section>
+<h2>FAQ</h2>
+<div>
+<h3>Wie kann ich den Quad-Ausflug buchen?</h3>
+<p>Buchen Sie direkt über WhatsApp oder E-Mail. Schnelle Bestätigung garantiert.</p>
 
-    <div class="button-group reveal">
-        <a href="mailto:pyramidenreisende@gmail.com" class="button email-btn">Anfrage per E-Mail</a>
-        <a href="https://wa.me/201026134719" class="button whatsapp-btn" target="_blank">
-            <svg viewBox="0 0 32 32"><path fill="white" d="M16 0C7.163 0 0 7.163 0 16c0 2.832.74 5.579 2.15 8L0 32l8-2.15A15.954 15.954 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29c-3.1 0-6-1-8.35-2.67l-.51-.3-4.63 1.22 1.24-4.52-.33-.52A13.924 13.924 0 012.1 16C2.1 8.477 8.477 2.1 16 2.1S29.9 8.477 29.9 16 23.523 29 16 29z"/><path fill="white" d="M19.11 17.59c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.18.27-.71.88-.87 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.67 1.12 2.86.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/></svg>
-            Jetzt per WhatsApp buchen
-        </a>
-    </div>
+<h3>Sind alle Kosten inklusive?</h3>
+<p>Ja, inklusive Hoteltransfer, Ausrüstung und erfahrenen Guides.</p>
 
-    <p style="margin-top:20px; font-weight:bold; color:#25D366;">
-      Unverbindlich anfragen – Zahlung vor Ort nach dem Ausflug
-    </p>
+<h3>Wie lange dauert die Tour?</h3>
+<p>Die Dauer variiert je nach gewählter Strecke und Route.</p>
+</div>
+</section>
+
+<section>
+<h2>Abholgebiete & Transfers</h2>
+<p>Hurghada • Makadi Bay • Sahl Hasheesh • El Gouna • Soma Bay • Safaga • El Quseir • Marsa Alam • Kairo • Luxor • Assuan</p>
+</section>
+
+<div style="text-align:center; margin:30px 0;">
+<a href="mailto:pyramidenreisende@gmail.com" class="button">Anfrage per E-Mail</a>
+<a href="https://wa.me/201026134719" target="_blank" class="button whatsapp-btn">Jetzt per WhatsApp buchen</a>
 </div>
 
 <script>
-// ⭐ Zähler Animation
-let counter = document.getElementById('ratingCounter');
-let count = 500;
-let target = 520;
-let interval = setInterval(() => {
-  if(count < target){
-    count++;
-    counter.innerText = count;
-  } else {
-    clearInterval(interval);
-  }
-}, 100);
+// ⭐ Sterne Animation (einfaches Blinken)
+let star = document.getElementById('star-animation');
+setInterval(()=>{ star.style.opacity = (star.style.opacity==1?0.6:1); },500);
 
-// ⭐ Scroll Reveal
-function revealElements() {
-  const reveals = document.querySelectorAll('.reveal');
-  for(let i=0; i<reveals.length; i++){
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 150;
-    if(elementTop < windowHeight - revealPoint){
-      reveals[i].classList.add('active');
-    }
-  }
-}
-window.addEventListener('scroll', revealElements);
-window.addEventListener('load', revealElements);
+// ⭐ Zähler Animation
+let counter = document.getElementById('review-counter');
+let target = 520;
+let current = 500;
+let interval = setInterval(()=>{
+    if(current<target){ current++; counter.textContent=current; document.getElementById('counter-text').textContent=current; }
+    else clearInterval(interval);
+},80);
 </script>
+
 </body>
 </html>
