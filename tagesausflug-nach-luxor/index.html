@@ -4,103 +4,128 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxor Tagesausflug | Privater Ausflug ab Hurghada & Marsa Alam</title>
-<meta name="description" content="Privater Tagesausflug nach Luxor ab Hurghada oder Marsa Alam. Tal der Könige, Karnak Tempel, Hatshepsut Tempel und Memnon Kolosse.">
+<meta name="description" content="Privater Tagesausflug nach Luxor ab Hurghada oder Marsa Alam. Tal der Könige, Karnak Tempel, Hatshepsut Tempel, Memnon Kolosse.">
 
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#fdf6f0;color:#333;line-height:1.7;}
-a{text-decoration:none;}
-.hero{position:relative;width:100%;height:55vh;background:url('https://images.unsplash.com/photo-1606189005822-8a15b5f434f5') center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;opacity:0;transform:translateY(30px);transition:1s;}
-.hero h1{background: rgba(0,0,0,0.5); padding:20px 30px;border-radius:12px;font-size:36px;}
-.section{max-width:1000px;margin:auto;background:#fff;border-radius:16px;padding:50px 25px;box-shadow:0 12px 30px rgba(0,0,0,0.18);margin-top:-50px;opacity:0;transform:translateY(30px);transition:1s;}
-h2{color:#b35900;margin:30px 0 20px;font-size:26px;}
-p{font-size:18px;margin-bottom:25px;}
-
-ul{list-style:none;padding:0;display:inline-block;text-align:left;}
-ul li{font-size:18px;margin:10px 0;padding-left:28px;position:relative;}
-ul li::before{content:"⭐";position:absolute;left:0;}
-
-.review-box{text-align:center;margin-bottom:30px;}
-.stars{color:#f4b400;font-size:26px;margin-bottom:5px;}
-
-.highlights{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:30px;}
-.highlight{flex:1 1 200px;background:#fff3e6;border-radius:12px;padding:15px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;opacity:0;transform:translateY(30px);transition:0.6s;}
-.highlight:hover{transform:translateY(-5px);}
-.highlight img{width:100%;border-radius:10px;margin-bottom:10px;}
-.highlight p{font-weight:bold;color:#b35900;}
-
-.button-group{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:20px;}
-.button{padding:18px 40px;border-radius:12px;font-size:18px;font-weight:bold;color:#fff;transition:.3s;min-width:240px;text-align:center;}
-.button:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,0.25);}
-.email-btn{background:#b35900;}
-.whatsapp-btn{background:#25D366;}
-
-.note{text-align:center;margin-top:25px;font-weight:bold;color:#25D366;}
-
+body {
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f0f8ff;
+    color:#333;
+    line-height:1.7;
+}
+.container {
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:35px 25px;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+h1 {
+    font-size:32px;
+    color:#004080;
+    margin-bottom:20px;
+    text-align:center;
+}
+h2 {
+    font-size:24px;
+    margin-top:40px;
+    color:#004080;
+    border-bottom:3px solid #25D366;
+    padding-bottom:6px;
+}
+p, li {
+    font-size:18px;
+}
+ul {
+    list-style:none;
+    padding:0;
+    margin:10px 0 25px 0;
+}
+ul li {
+    position:relative;
+    padding-left:28px;
+    margin:10px 0;
+}
+ul li::before {
+    content:"⭐";
+    position:absolute;
+    left:0;
+}
+.review-box {
+    text-align:center;
+    margin-bottom:30px;
+}
+.stars {
+    color:#f4b400;
+    font-size:26px;
+}
+.review-box strong {
+    display:block;
+    font-size:18px;
+    margin-bottom:5px;
+}
+.button-group {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    margin-top:25px;
+}
+.button {
+    display:inline-block;
+    padding:16px 35px;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:18px;
+    color:#fff;
+    min-width:220px;
+    text-align:center;
+    transition:0.3s ease;
+}
+.button:hover {
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+.email-btn { background-color:#004080; }
+.email-btn:hover { background-color:#002b5c; }
+.whatsapp-btn { background-color:#25D366; }
+.whatsapp-btn:hover { background-color:#1ebe5d; }
+.note {
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+    color:#25D366;
+}
 @media(max-width:768px){
-.hero h1{font-size:28px;padding:15px 20px;}
-h2{font-size:22px;}
-.highlight{flex:1 1 100%;}
-.button{width:100%;}
+    h1 { font-size:26px; }
+    h2 { font-size:22px; }
+    .button { width:100%; font-size:18px; }
 }
 </style>
 </head>
-
 <body>
 
-<div class="hero">
-  <h1>🏛️ Luxor Tagesausflug</h1>
-</div>
+<div class="container">
 
-<div class="section">
+<h1>🏛️ Luxor Tagesausflug</h1>
 
-<!-- ⭐ تقييم بدون مبالغة -->
 <div class="review-box">
-  <div class="stars">★★★★★</div>
-  <strong>Über 500 Bewertungen mit 5/5 Sternen</strong>
-  <p>Gäste aus Deutschland, Österreich und der Schweiz</p>
-</div>
-
-<!-- ✅ نقاط الثقة -->
-<div style="text-align:center; margin:20px 0;">
-  <p style="font-weight:bold;">
-    ✔️ Keine Vorauszahlung<br>
-    ✔️ Bezahlung Vorort nach dem Ausflug<br>
-    ✔️ Flexible Stornierung möglich
-  </p>
+    <div class="stars">★★★★★</div>
+    <strong>Über 500 Bewertungen mit 5/5</strong>
+    <p>Zufriedene Gäste aus Deutschland, Österreich und der Schweiz</p>
 </div>
 
 <h2>Programm Übersicht</h2>
 <ul>
 <li>Frühe Abholung vom Hotel in Hurghada oder Marsa Alam</li>
-<li>Besichtigung des Karnak-Tempels</li>
-<li>Tal der Könige</li>
-<li>Mittagessen</li>
+<li>Besuch des Karnak Tempels</li>
+<li>Tal der Könige (Innenbesichtigung)</li>
+<li>Mittagessen mit ägyptischen Spezialitäten</li>
 <li>Hatshepsut Tempel & Memnon Kolosse</li>
 <li>Rückfahrt zum Hotel</li>
 </ul>
-
-<h2>Highlights</h2>
-<div class="highlights">
-<div class="highlight">
-<img src="https://images.unsplash.com/photo-1599392296905-04c081d999c0">
-<p>Tal der Könige</p>
-</div>
-
-<div class="highlight">
-<img src="https://images.unsplash.com/photo-1589812069756-6f6b0b8c2f6a">
-<p>Karnak Tempel</p>
-</div>
-
-<div class="highlight">
-<img src="https://images.unsplash.com/photo-1599201307881-5c15498d4c36">
-<p>Nilblick</p>
-</div>
-
-<div class="highlight">
-<img src="https://images.unsplash.com/photo-1606189005822-8a15b5f434f5">
-<p>Hatshepsut Tempel</p>
-</div>
-</div>
 
 <h2>Im Preis enthalten</h2>
 <ul>
@@ -116,37 +141,14 @@ h2{font-size:22px;}
 <li>Persönliche Ausgaben</li>
 </ul>
 
-<!-- 🔥 أزرار -->
 <div class="button-group">
-  <a href="mailto:pyramidenreisende@gmail.com" class="button email-btn">
-    Jetzt unverbindlich anfragen
-  </a>
-
-  <a href="https://wa.me/201026134719" class="button whatsapp-btn">
-    Kontakt per WhatsApp
-  </a>
+<a href="mailto:pyramidenreisende@gmail.com" class="button email-btn">Jetzt unverbindlich anfragen</a>
+<a href="https://wa.me/201026134719" class="button whatsapp-btn" target="_blank">Kontakt per WhatsApp</a>
 </div>
 
-<p class="note">
-  Bezahlung Vorort nach dem Ausflug
-</p>
+<p class="note">Bezahlung Vorort nach dem Ausflug</p>
 
 </div>
-
-<script>
-// Animation عند التمرير
-function reveal(){
-document.querySelectorAll('.hero,.section,.highlight').forEach(el=>{
-let top=el.getBoundingClientRect().top;
-if(top<window.innerHeight-100){
-el.style.opacity=1;
-el.style.transform="translateY(0)";
-}
-});
-}
-window.addEventListener("scroll",reveal);
-window.addEventListener("load",reveal);
-</script>
 
 </body>
 </html>
