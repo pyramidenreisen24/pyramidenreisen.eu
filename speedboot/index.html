@@ -6,9 +6,11 @@
 
 <title>Hurghada Speedboot Ausflüge – Mahmya, Delfinausflug & alle Inseln</title>
 
-<meta name="description" content="Hurghada Speedboot Ausflüge zu Mahmya Insel, Delfinausflug, Orange Bay & alle Inseln. Private Touren im Roten Meer.">
+<meta name="description" content="Hurghada Speedboot Ausflüge zu Mahmya Insel, Delfinausflug, Malediven Sandbank, Orange Bay & alle Inseln. Private Touren im Roten Meer.">
 
 <link rel="canonical" href="https://pyramidenreisen.eu/hurghada-speedboot">
+
+<meta name="robots" content="index, follow">
 
 <style>
 body{
@@ -24,16 +26,16 @@ margin:auto;
 padding:40px;
 }
 
-h1{font-size:42px;margin-bottom:10px;}
+h1{font-size:40px;margin-bottom:10px;}
 
-.sub{opacity:0.9;font-size:18px;margin-bottom:15px;}
+.sub{opacity:0.9;font-size:18px;}
 
-.section{
-background:#fff;
-color:#222;
-padding:40px;
-border-radius:12px;
-margin-top:30px;
+.badge{
+margin-top:12px;
+color:#ffd700;
+font-weight:bold;
+line-height:1.6;
+text-align:center;
 }
 
 .cta{
@@ -41,6 +43,7 @@ margin-top:20px;
 display:flex;
 gap:15px;
 flex-wrap:wrap;
+justify-content:center;
 }
 
 .btn{
@@ -53,15 +56,51 @@ font-weight:bold;
 .whatsapp{background:#25D366;color:#fff;}
 .email{background:#fff;color:#0b3a5a;}
 
-.badge{
-margin-top:10px;
-color:#ffd700;
-font-weight:bold;
+.section{
+background:#fff;
+color:#222;
+padding:40px;
+margin-top:30px;
+border-radius:12px;
 }
 
-/* hidden versions */
-.version-a, .version-b{display:none;}
+.card{
+background:#164060;
+color:#fff;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+}
+
+.version-a,.version-b{display:none;}
+
+.stars{
+font-size:20px;
+color:#ffd700;
+}
 </style>
+
+<!-- ⭐ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Hurghada Speedboot Ausflüge",
+  "description": "Speedboot Touren zu Mahmya, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Pyramiden Reisen24",
+    "url": "https://pyramidenreisen.eu/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "287",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
 
 </head>
 
@@ -69,17 +108,20 @@ font-weight:bold;
 
 <div class="container">
 
-<!-- VERSION A -->
+<!-- ===================== -->
+<!-- VERSION A (TRUST) -->
+<!-- ===================== -->
 <div id="versionA" class="version-a">
 
 <h1>Hurghada Speedboot Ausflüge</h1>
 
-<p class="sub">Mahmya Insel • Delfinausflug • Orange Bay • alle Inseln</p>
+<p class="sub">Mahmya Insel • Delfinausflug • Malediven Sandbank • Orange Bay • alle Inseln</p>
 
 <div class="badge">
 ✔ Bezahlung Vorort nach dem Ausflug<br>
 ✔ Keine versteckten Kosten<br>
-⭐ 287 Bewertungen
+<div class="stars">⭐⭐⭐⭐⭐</div>
+287 Bewertungen
 </div>
 
 <div class="cta">
@@ -88,18 +130,35 @@ font-weight:bold;
 </div>
 
 <div class="section">
-<h2>Beste Speedboot Touren</h2>
-<p>Erleben Sie sichere und hochwertige Hurghada Speedboot Ausflüge zu den schönsten Inseln im Roten Meer.</p>
+<h2>Beste Hurghada Speedboot Touren</h2>
+
+<div class="card">
+<h3>🏝 Mahmya Insel</h3>
+<p>Private Speedboot Tour zur traumhaften Insel Mahmya.</p>
+</div>
+
+<div class="card">
+<h3>🐬 Delfinausflug & Malediven Sandbank</h3>
+<p>Delfine beobachten und Sandbank-Erlebnis genießen.</p>
+</div>
+
+<div class="card">
+<h3>☀️ Orange Bay & alle Inseln</h3>
+<p>Besuch der schönsten Inseln im Roten Meer.</p>
 </div>
 
 </div>
 
-<!-- VERSION B -->
+</div>
+
+<!-- ===================== -->
+<!-- VERSION B (EMOTION) -->
+<!-- ===================== -->
 <div id="versionB" class="version-b">
 
 <h1>Extreme Speedboot Abenteuer in Hurghada</h1>
 
-<p class="sub">Schnelligkeit • Luxus • Adrenalin • die schönsten Inseln</p>
+<p class="sub">Schnelligkeit • Luxus • Adrenalin • Roten Meer Inseln</p>
 
 <div class="badge">
 🚤 Mahmya • 🐬 Delfine • 🏝 Orange Bay • 🌴 alle Inseln
@@ -112,14 +171,16 @@ font-weight:bold;
 
 <div class="section">
 <h2>Speedboot Erlebnis</h2>
-<p>Genießen Sie ein exklusives privates Speedboot Erlebnis voller Geschwindigkeit und Emotion im Roten Meer.</p>
+<p>Erleben Sie Geschwindigkeit, Luxus und pure Emotion auf dem Roten Meer.</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- A/B SWITCHER -->
+<!-- ===================== -->
+<!-- A/B SWITCH SCRIPT -->
+<!-- ===================== -->
 <script>
 const version = Math.random() < 0.5 ? "A" : "B";
 
@@ -129,7 +190,6 @@ if(version === "A"){
   document.getElementById("versionB").style.display = "block";
 }
 
-// optional tracking (for analytics)
 console.log("AB Version:", version);
 </script>
 
