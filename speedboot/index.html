@@ -4,30 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hurghada Speedboot Ausflüge 2026 – Normal & Luxury</title>
+<title>Hurghada Speedboot 2026 – Mahmya, Delfin, Malediven Sandbank & alle Inseln</title>
 
-<meta name="description" content="Hurghada Speedboot Touren zu Mahmya, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln. Normal & VIP Luxury Optionen.">
+<meta name="description" content="Hurghada Speedboot Ausflüge zu Mahmya Insel, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln. Normal & VIP Luxury Touren verfügbar.">
+
+<meta name="robots" content="index, follow">
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-}
-
-/* SWITCH BUTTONS (optional manual control) */
-.switcher{
-text-align:center;
-padding:10px;
-background:#111;
-}
-
-.switcher button{
-padding:10px 15px;
-margin:5px;
-border:none;
-cursor:pointer;
-border-radius:5px;
-}
+body{margin:0;font-family:Arial;}
 
 /* NORMAL */
 .normal{
@@ -74,17 +58,64 @@ font-weight:bold;
 
 .normal .btn{background:#00b4d8;color:#fff;}
 .luxury .btn{background:#d4af37;color:#000;}
+
+/* FAQ */
+.faq{
+background:#fff;
+color:#222;
+padding:40px;
+margin-top:30px;
+border-radius:10px;
+}
+
+h2{margin-top:0;}
 </style>
+
+<!-- FAQ SCHEMA (GOOGLE RICH SNIPPET) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie kann ich buchen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über WhatsApp oder E-Mail mit schneller Bestätigung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wann erfolgt die Bezahlung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bezahlung Vorort nach dem Ausflug."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Inseln sind enthalten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mahmya Insel, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es versteckte Kosten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, alle Preise sind transparent."
+      }
+    }
+  ]
+}
+</script>
 
 </head>
 
 <body>
-
-<!-- MANUAL SWITCH (optional) -->
-<div class="switcher">
-<button onclick="show('normal')">Normal</button>
-<button onclick="show('luxury')">Luxury</button>
-</div>
 
 <!-- ================= NORMAL ================= -->
 <div id="normal" class="normal">
@@ -123,7 +154,7 @@ font-weight:bold;
 </div>
 
 <div class="card">
-✔ 7+ Jahre Erfahrung im Premium Tourismus
+✔ 7+ Jahre Erfahrung im Tourismus
 </div>
 
 <a class="btn" href="https://wa.me/201026134719">VIP Anfrage starten</a>
@@ -131,17 +162,34 @@ font-weight:bold;
 </div>
 </div>
 
-<!-- ================= AUTO A/B ================= -->
-<script>
-function show(type){
-document.getElementById("normal").style.display="none";
-document.getElementById("luxury").style.display="none";
-document.getElementById(type).style.display="block";
-}
+<!-- ================= FAQ SECTION ================= -->
+<div class="faq">
 
-// AUTO RANDOM ON LOAD
+<h2>FAQ – Hurghada Speedboot</h2>
+
+<h3>Wie kann ich buchen?</h3>
+<p>Über WhatsApp oder E-Mail.</p>
+
+<h3>Wann erfolgt die Bezahlung?</h3>
+<p><b>Bezahlung Vorort nach dem Ausflug.</b></p>
+
+<h3>Welche Inseln sind enthalten?</h3>
+<p>Mahmya, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln.</p>
+
+<h3>Gibt es versteckte Kosten?</h3>
+<p>Nein.</p>
+
+</div>
+
+<!-- ================= A/B SCRIPT ================= -->
+<script>
 const version = Math.random() < 0.5 ? "normal" : "luxury";
-show(version);
+
+if(version === "normal"){
+  document.getElementById("normal").style.display="block";
+}else{
+  document.getElementById("luxury").style.display="block";
+}
 </script>
 
 </body>
