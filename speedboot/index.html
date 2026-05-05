@@ -4,14 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hurghada Speedboot 2026 – Mahmya, Delfin, Malediven Sandbank & alle Inseln</title>
+<title>Hurghada Speedboot Touren 2026 – Mahmya, Delfine & Inseln</title>
 
-<meta name="description" content="Hurghada Speedboot Ausflüge zu Mahmya Insel, Delfinausflug, Malediven Sandbank, Orange Bay und alle Inseln. Normal & VIP Luxury Touren verfügbar.">
+<meta name="description" content="Speedboot Touren in Hurghada zu Mahmya, Delfinen, Orange Bay & Sandbank. Jetzt buchen & vor Ort bezahlen.">
 
 <meta name="robots" content="index, follow">
 
+<!-- CANONICAL -->
+<link rel="canonical" href="https://yourdomain.com/hurghada-speedboot">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Hurghada Speedboot 2026 – Mahmya, Delfine & Inseln">
+<meta property="og:description" content="Top Speedboot Touren in Hurghada. Mahmya, Orange Bay, Delfine & Sandbank. Jetzt buchen!">
+<meta property="og:image" content="https://yourdomain.com/images/speedboat.jpg">
+<meta property="og:url" content="https://yourdomain.com/hurghada-speedboot">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
-body{margin:0;font-family:Arial;}
+body{
+margin:0;
+font-family:Arial, sans-serif;
+}
 
 /* NORMAL */
 .normal{
@@ -64,14 +79,32 @@ font-weight:bold;
 background:#fff;
 color:#222;
 padding:40px;
-margin-top:30px;
+margin:30px auto;
 border-radius:10px;
+max-width:900px;
 }
 
 h2{margin-top:0;}
+
+/* MOBILE OPTIMIZATION */
+@media(max-width:768px){
+.container{
+padding:20px;
+}
+
+h1{
+font-size:24px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+font-size:18px;
+}
+}
 </style>
 
-<!-- FAQ SCHEMA (GOOGLE RICH SNIPPET) -->
+<!-- FAQ SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,6 +146,22 @@ h2{margin-top:0;}
 }
 </script>
 
+<!-- TOUR SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TouristTrip",
+ "name": "Hurghada Speedboot Tour",
+ "description": "Speedboot Ausflüge zu Mahmya, Delfinen, Orange Bay und Sandbank",
+ "touristType": "Tourists",
+ "offers": {
+   "@type": "Offer",
+   "priceCurrency": "EUR",
+   "availability": "https://schema.org/InStock"
+ }
+}
+</script>
+
 </head>
 
 <body>
@@ -121,19 +170,25 @@ h2{margin-top:0;}
 <div id="normal" class="normal">
 <div class="container">
 
-<h1>Hurghada Speedboot Ausflüge</h1>
+<h1>Hurghada Speedboot Touren 2026 – Mahmya, Delfine & Inseln</h1>
 <p>Mahmya • Orange Bay • Delfinausflug • alle Inseln</p>
 
 <div class="card">
-⭐ Beste Preis-Leistung Touren
+⭐ Top bewertete Speedboot Touren in Hurghada
+</div>
+
+<div class="card">
+🔥 Begrenzte Plätze – täglich schnell ausgebucht
 </div>
 
 <div class="card">
 ✔ Bezahlung Vorort nach dem Ausflug<br>
-✔ Keine versteckten Kosten
+✔ Keine versteckten Kosten<br>
+✔ 500+ zufriedene Gäste<br>
+✔ Deutschsprachiger Service
 </div>
 
-<a class="btn" href="https://wa.me/201026134719">Jetzt buchen</a>
+<a class="btn" href="https://wa.me/201026134719">Jetzt per WhatsApp buchen</a>
 
 </div>
 </div>
@@ -142,19 +197,21 @@ h2{margin-top:0;}
 <div id="luxury" class="luxury">
 <div class="container">
 
-<h1>Private Luxury Speedboot Experience</h1>
-<p>VIP • Exklusiv • Privat • Kein Massentourismus</p>
+<h1>Private Luxury Speedboot Tour – Hurghada VIP Experience</h1>
+<p>VIP • Privat • Exklusiv • Kein Massentourismus</p>
 
 <div class="card">
 ⭐ Limited Private Tours Only
 </div>
 
 <div class="card">
-🚤 Mahmya • 🐬 Delfine • 🏝 Malediven Sandbank • 🌴 Orange Bay
+🚤 Mahmya • 🐬 Delfine • 🏝 Sandbank • 🌴 Orange Bay
 </div>
 
 <div class="card">
-✔ 7+ Jahre Erfahrung im Tourismus
+✔ 7+ Jahre Erfahrung im Tourismus<br>
+✔ Private & exklusive Touren<br>
+✔ Premium Service
 </div>
 
 <a class="btn" href="https://wa.me/201026134719">VIP Anfrage starten</a>
@@ -162,7 +219,7 @@ h2{margin-top:0;}
 </div>
 </div>
 
-<!-- ================= FAQ SECTION ================= -->
+<!-- ================= FAQ ================= -->
 <div class="faq">
 
 <h2>FAQ – Hurghada Speedboot</h2>
@@ -181,15 +238,13 @@ h2{margin-top:0;}
 
 </div>
 
-<!-- ================= A/B SCRIPT ================= -->
+<!-- ================= A/B TEST FIXED ================= -->
 <script>
-const version = Math.random() < 0.5 ? "normal" : "luxury";
+const savedVersion = localStorage.getItem("version");
+const version = savedVersion ? savedVersion : (Math.random() < 0.5 ? "normal" : "luxury");
+localStorage.setItem("version", version);
 
-if(version === "normal"){
-  document.getElementById("normal").style.display="block";
-}else{
-  document.getElementById("luxury").style.display="block";
-}
+document.getElementById(version).style.display = "block";
 </script>
 
 </body>
