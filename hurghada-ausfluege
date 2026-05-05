@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hurghada Ausflüge 2026 | Speedboot, Orange Bay & Delfine</title>
+
+<meta name="description" content="Die besten Hurghada Ausflüge 2026: Orange Bay, Mahmya Insel, Delfine & Speedboot Touren. Jetzt buchen und vor Ort bezahlen!">
+
+<link rel="canonical" href="https://yourdomain.com/hurghada-ausfluege">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f4fbff;
+color:#222;
+}
+
+/* TOP BAR */
+.topbar{
+background:#ffb703;
+color:#000;
+text-align:center;
+padding:10px;
+font-weight:bold;
+font-size:14px;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+/* CONTAINER */
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:20px 10px;
+}
+
+h1{
+color:#023e8a;
+font-size:30px;
+}
+
+.sub{
+color:#555;
+}
+
+/* CARD */
+.card{
+background:#fff;
+padding:20px;
+margin-top:18px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* CTA */
+.cta{
+display:block;
+text-align:center;
+background:#0077b6;
+color:#fff;
+padding:18px;
+margin-top:20px;
+border-radius:12px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.cta:hover{
+background:#023e8a;
+}
+
+h2{
+color:#023e8a;
+}
+
+ul{
+padding-left:18px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+h1{font-size:24px;}
+.cta{font-size:16px;}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP BAR (IMPORTANT TRUST ELEMENT) -->
+<div class="topbar">
+✔ Vor Ort nach dem Ausflug Bezahlung – Keine Vorauszahlung
+</div>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+<h1>Hurghada Ausflüge 2026 – Die besten Touren</h1>
+<p class="sub">Orange Bay • Mahmya • Delfine • Speedboot</p>
+
+<a class="cta" href="https://wa.me/201026134719">
+Jetzt per WhatsApp buchen
+</a>
+</div>
+
+<!-- CONTENT -->
+<div class="card">
+
+<h2>Die besten Hurghada Ausflüge</h2>
+
+<p>
+Hurghada ist eines der beliebtesten Reiseziele in Ägypten und bietet traumhafte Ausflüge im Roten Meer. Besonders beliebt sind Speedboot Touren zu Orange Bay, Mahmya Insel und Delfin Spots.
+</p>
+
+<p>
+Jedes Jahr besuchen tausende Touristen diese Region, um das kristallklare Wasser, weiße Sandstrände und die beeindruckende Unterwasserwelt zu erleben.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Beliebte Touren</h2>
+
+<ul>
+<li>🏝 Orange Bay Hurghada</li>
+<li>🐬 Delfin Tour Hurghada</li>
+<li>🚤 Mahmya Insel Ausflug</li>
+<li>🌊 Sandbank wie Malediven</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Warum Speedboot Touren?</h2>
+
+<p>
+Speedboot Touren sind die schnellste und flexibelste Möglichkeit, die Inseln im Roten Meer zu erreichen. Sie vermeiden große Gruppen und genießen mehr Zeit am Strand und im Wasser.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Was Sie erwartet</h2>
+
+<ul>
+<li>Kristallklares Wasser</li>
+<li>Schnorcheln mit bunten Fischen</li>
+<li>Traumhafte Inseln</li>
+<li>Lokale Guides</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Jetzt buchen</h2>
+
+<p>
+Sichern Sie sich jetzt Ihren Hurghada Ausflug 2026. Die Plätze sind besonders in der Saison schnell ausgebucht.
+</p>
+
+<a class="cta" href="https://wa.me/201026134719">
+Jetzt unverbindlich anfragen
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
