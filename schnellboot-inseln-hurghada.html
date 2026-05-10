@@ -22,7 +22,7 @@
 }
 </script>
 
-<!-- FAQ SCHEMA (محسن) -->
+<!-- FAQ SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -33,7 +33,7 @@
    "name": "Wie lange dauert eine private Speedboot Tour in Hurghada?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Private Schnellboot Touren dauern je nach Route zwischen 3 und 6 Stunden. Individuelle Anpassungen sind möglich."
+    "text": "Private Schnellboot Touren dauern zwischen 3 und 6 Stunden und können individuell angepasst werden."
    }
   },
   {
@@ -57,15 +57,15 @@
    "name": "Muss ich im Voraus bezahlen?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Nein, Zahlung erfolgt bequem vor Ort ohne Vorauszahlung."
+    "text": "Nein, Zahlung erfolgt vor Ort ohne Vorauszahlung."
    }
   },
   {
    "@type": "Question",
-   "name": "Ist die Tour privat oder in Gruppen?",
+   "name": "Ist die Tour privat?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Unsere Speedboot Touren sind privat und exklusiv – keine großen Gruppen."
+    "text": "Ja, alle Speedboot Touren sind privat und exklusiv ohne Gruppen."
    }
   }
  ]
@@ -88,6 +88,32 @@ a:hover{text-decoration:underline}
 .footer a{color:#00aa6c;font-size:18px}
 table{width:100%;border-collapse:collapse}
 td,th{border:1px solid #ddd;padding:8px}
+
+/* Floating Button */
+.floating-booking {
+position:fixed;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+z-index:999;
+}
+.floating-booking a{
+background:#25D366;
+color:#fff;
+padding:10px 12px;
+border-radius:30px;
+font-size:13px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+animation:floatBtn 2s infinite ease-in-out;
+display:block;
+}
+@keyframes floatBtn {
+0%{transform:translateY(0)}
+50%{transform:translateY(-5px)}
+100%{transform:translateY(0)}
+}
 </style>
 
 </head>
@@ -106,13 +132,16 @@ Schnellboot Hurghada Inseln Tour – Orange Bay vs Mahmya 2026
 
 <h1>Speedboot & Insel Ausflüge Hurghada</h1>
 
-<!-- INTRO -->
 <div class="card">
 <p>
 Erleben Sie exklusive <b>Schnellboot Touren in Hurghada</b> zu den schönsten Orten im Roten Meer:
 <a href="/orange-bay">Orange Bay</a>, 
 <a href="/mahmya">Mahmya Island</a> und die 
 <a href="/malediven-sandbank">Malediven Sandbank</a>.
+</p>
+
+<p style="background:#e8f9f1;padding:10px;border-radius:8px;font-weight:bold;color:#0a7f5a;text-align:center;">
+💰 Preis ab <span style="font-size:20px;">40€</span> pro Person – abhängig von der Teilnehmerzahl
 </p>
 
 <p>
@@ -123,46 +152,18 @@ Mehr Touren:
 </p>
 </div>
 
-<!-- COMPARISON -->
 <div class="card">
 <h2>Orange Bay vs Mahmya Vergleich</h2>
-
 <table>
-<tr>
-<th>Kriterium</th>
-<th>Orange Bay</th>
-<th>Mahmya</th>
-</tr>
-
-<tr>
-<td>Atmosphäre</td>
-<td>Lebhaft</td>
-<td>Ruhig & exklusiv</td>
-</tr>
-
-<tr>
-<td>Preis</td>
-<td>Günstiger</td>
-<td>Teurer</td>
-</tr>
-
-<tr>
-<td>Zielgruppe</td>
-<td>Junge Reisende</td>
-<td>Familien & Paare</td>
-</tr>
-
-<tr>
-<td>Erlebnis</td>
-<td>Action & Fotos</td>
-<td>Entspannung & Luxus</td>
-</tr>
+<tr><th>Kriterium</th><th>Orange Bay</th><th>Mahmya</th></tr>
+<tr><td>Atmosphäre</td><td>Lebhaft</td><td>Ruhig & exklusiv</td></tr>
+<tr><td>Preis</td><td>Günstiger</td><td>Teurer</td></tr>
+<tr><td>Zielgruppe</td><td>Junge Reisende</td><td>Familien & Paare</td></tr>
+<tr><td>Erlebnis</td><td>Action & Fotos</td><td>Entspannung & Luxus</td></tr>
 </table>
-
 <p>👉 Empfehlung: Orange Bay für Action – Mahmya für Ruhe.</p>
 </div>
 
-<!-- BENEFITS -->
 <div class="card">
 <h2>Vorteile der Schnellboot Tour</h2>
 <ul>
@@ -173,66 +174,41 @@ Mehr Touren:
 </ul>
 </div>
 
-<!-- FAQ UI -->
 <div class="card">
 <h2>Häufige Fragen (FAQ)</h2>
-
-<p><b>Wie lange dauert die Tour?</b><br>Zwischen 3 und 6 Stunden, individuell anpassbar.</p>
-
-<p><b>Orange Bay oder Mahmya?</b><br>Orange Bay = lebhaft / Mahmya = ruhig & exklusiv.</p>
-
-<p><b>Kann man Delfine sehen?</b><br>Häufig ja, aber nicht garantiert.</p>
-
-<p><b>Bezahlung?</b><br>Keine Vorauszahlung – Zahlung vor Ort.</p>
-
-<p><b>Privat?</b><br>Ja, keine Gruppen – nur private Touren.</p>
-
+<p><b>Dauer?</b><br>3–6 Stunden individuell.</p>
+<p><b>Orange Bay oder Mahmya?</b><br>Action vs Ruhe.</p>
+<p><b>Delfine?</b><br>Oft, aber nicht garantiert.</p>
+<p><b>Zahlung?</b><br>Vor Ort.</p>
+<p><b>Privat?</b><br>Ja.</p>
 </div>
 
-<!-- CTA -->
 <div class="cta">
 <a href="mailto:sonnenwelle.reisen@gmx.de?subject=Schnellboot%20Hurghada%20Anfrage">
 jetzt unverbindlich anfragen
 </a>
 </div>
 
-<!-- INTERNAL LINKS (SEO BOOST) -->
 <div class="card">
 <h2>Top Inseln & Touren</h2>
-
 <p>
-<a href="https://pyramidenreisen.eu/speedboot/">Speedboot Hurghada</a><br>
-<a href="https://pyramidenreisen.eu/giftun-speedboot.html">Giftun Insel</a><br>
-<a href="https://pyramidenreisen.eu/speedboot-hurghada.html">Speedboot Tour</a><br>
-<a href="https://pyramidenreisen.eu/orange-bay-hurghada24.html">Orange Bay</a><br>
-<a href="https://pyramidenreisen.eu/mahmya-privates-speedboot.html">Mahmya Privat</a><br>
-<a href="https://pyramidenreisen.eu/orange-bay-hurghada.html">Orange Bay Infos</a><br>
-<a href="https://pyramidenreisen.eu/mahmya-speedboot-tour.html">Mahmya Tour</a><br>
-<a href="https://pyramidenreisen.eu/schnorcheln-speedboot-hurghada.html">Schnorcheln</a><br>
-<a href="https://pyramidenreisen.eu/orange-bay-speedboot.html">Orange Bay Boot</a><br>
-<a href="https://pyramidenreisen.eu/speedboot-exklusiv-hurghada.html">Exklusiv Tour</a><br>
-<a href="https://pyramidenreisen.eu/malediven-sandbank-hurghada.html">Malediven Sandbank</a><br>
-<a href="https://pyramidenreisen.eu/white-island-hurghada.html">White Island</a><br>
-<a href="https://pyramidenreisen.eu/speedboot-tour-hurghada.html">Speedboot Tour</a><br>
-<a href="https://pyramidenreisen.eu/schnellboot-inseln-hurghada.html">Inseln Guide</a><br>
-<a href="https://pyramidenreisen.eu/private-speedboot-hurghada.html">Private Tour</a><br>
-<a href="https://pyramidenreisen.eu/speedboot-hurghada-offer.html">Angebote</a><br>
-<a href="https://pyramidenreisen.eu/speedboot-hurghada-tipps-2026-private-tour-guide.html">Tipps 2026</a>
+<a href="https://pyramidenreisen.eu/speedboot/">Speedboot</a><br>
+<a href="https://pyramidenreisen.eu/giftun-speedboot.html">Giftun</a><br>
+<a href="https://pyramidenreisen.eu/orange-bay-hurghada.html">Orange Bay</a><br>
+<a href="https://pyramidenreisen.eu/mahmya-speedboot-tour.html">Mahmya</a><br>
+<a href="https://pyramidenreisen.eu/malediven-sandbank-hurghada.html">Sandbank</a>
 </p>
-
-<p>
-<a href="https://pyramidenreisen.eu/schnellboot-inseln-hurghada.html">
-Zur Hauptseite Schnellboot Hurghada
-</a>
-</p>
-
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
 <a href="https://www.tripadvisor.de/Attraction_Review-g297549-d24997907" target="_blank">★</a>
 </div>
 
+</div>
+
+<!-- FLOATING BUTTON -->
+<div class="floating-booking">
+<a href="mailto:sonnenwelle.reisen@gmx.de">Jetzt buchen</a>
 </div>
 
 </body>
