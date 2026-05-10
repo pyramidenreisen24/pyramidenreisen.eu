@@ -69,11 +69,13 @@
 </script>
 
 <style>
+
 body{
 font-family:Arial;
 margin:0;
 background:#f5f7fa;
 color:#222;
+line-height:1.7;
 }
 
 .top-bar{
@@ -94,55 +96,47 @@ border-bottom:3px solid #d4af37;
 
 h1{
 margin:0;
-font-size:30px;
+font-size:32px;
 }
 
 header p{
 color:#dcdcdc;
-margin-top:8px;
+margin-top:10px;
+font-size:17px;
 }
 
 .container{
 max-width:1000px;
 margin:auto;
 background:#fff;
-padding:30px;
-border-radius:10px;
+padding:35px;
+border-radius:12px;
 margin-top:-20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 .price{
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 color:#d4af37;
-margin-top:15px;
-}
-
-.btn-main{
-display:inline-block;
-padding:15px 28px;
-background:linear-gradient(135deg,#d4af37,#f1c40f);
-color:#000;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
 margin-top:20px;
-transition:0.3s;
-}
-
-.btn-main:hover{
-transform:scale(1.05);
+margin-bottom:10px;
 }
 
 .btn-mail{
 display:inline-block;
-padding:12px 20px;
-background:#0b1f3a;
+padding:14px 28px;
+background:linear-gradient(135deg,#0b1f3a,#1a2f4f);
 color:#fff;
 text-decoration:none;
 border-radius:8px;
-margin-left:10px;
+margin-top:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-mail:hover{
+transform:scale(1.04);
 }
 
 .grid{
@@ -154,9 +148,20 @@ margin-top:25px;
 
 .card{
 background:#f9f9f9;
-padding:15px;
+padding:18px;
 border-radius:10px;
 border-left:4px solid #d4af37;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+}
+
+.card a{
+text-decoration:none;
+color:#0b1f3a;
+font-weight:bold;
 }
 
 .internal-link{
@@ -167,24 +172,31 @@ margin-top:40px;
 .internal-link a{
 background:#0b1f3a;
 color:#fff;
-padding:12px 20px;
+padding:13px 22px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
+display:inline-block;
+transition:0.3s;
+}
+
+.internal-link a:hover{
+transform:scale(1.05);
 }
 
 .faq{
-margin-top:30px;
+margin-top:40px;
 }
 
 .faq h3{
 color:#0b1f3a;
+margin-bottom:5px;
 }
 
 .external-links{
 font-size:12px;
 color:#777;
-margin-top:15px;
+margin-top:20px;
 text-align:center;
 }
 
@@ -214,21 +226,42 @@ z-index:999;
 100%{transform:scale(1);}
 }
 
+.seo-section{
+margin-top:50px;
+background:#fafafa;
+padding:30px;
+border-radius:12px;
+border:1px solid #eee;
+}
+
+.seo-section h2{
+color:#0b1f3a;
+margin-bottom:20px;
+text-align:center;
+font-size:28px;
+}
+
+.seo-section p{
+margin-bottom:18px;
+font-size:17px;
+color:#333;
+}
+
 footer{
 text-align:center;
-padding:20px;
+padding:25px;
 background:#111;
 color:#aaa;
-margin-top:40px;
+margin-top:50px;
 }
 
 footer a{
 color:#00aa6c;
-font-size:18px;
+font-size:20px;
 text-decoration:none;
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -258,12 +291,8 @@ Perfekt für ruhige Fahrten, angenehme Temperaturen und unvergessliche Wüstenab
 💰 Ab 25€ pro Person
 </div>
 
-<a href="https://wa.me/201000000000" class="btn-main">
-Jetzt per WhatsApp buchen
-</a>
-
 <a href="mailto:info@pyramidenreisen.eu" class="btn-mail">
-Unverbindlich anfragen
+Jetzt unverbindlich anfragen
 </a>
 
 <h2>Highlights der Quad Tour</h2>
@@ -287,21 +316,31 @@ Sie fahren entlang der Küste mit professioneller Einweisung und genießen beein
 <h2>Weitere Touren in Hurghada</h2>
 
 <div class="grid">
+
 <div class="card">
-<a href="https://pyramidenreisen.eu/quad-ausflug">Quad Ausflug Hurghada</a>
+<a href="https://pyramidenreisen.eu/quad-ausflug">
+Quad Ausflug Hurghada
+</a>
 </div>
 
 <div class="card">
-<a href="https://pyramidenreisen.eu/speedboot/">Speedboot Hurghada</a>
+<a href="https://pyramidenreisen.eu/speedboot/">
+Speedboot Hurghada
+</a>
 </div>
 
 <div class="card">
-<a href="https://pyramidenreisen.eu/orange-bay-hurghada.html">Orange Bay</a>
+<a href="https://pyramidenreisen.eu/orange-bay-hurghada.html">
+Orange Bay
+</a>
 </div>
 
 <div class="card">
-<a href="https://pyramidenreisen.eu/mahmya-speedboot-tour.html">Mahmya Island</a>
+<a href="https://pyramidenreisen.eu/mahmya-speedboot-tour.html">
+Mahmya Island
+</a>
 </div>
+
 </div>
 
 <div class="internal-link">
@@ -328,7 +367,12 @@ Sie fahren entlang der Küste mit professioneller Einweisung und genießen beein
 
 </div>
 
-</div><!-- INTERNAL SEO LINKS -->
+</div>
+
+<!-- INTERNAL SEO LINKS -->
+
+<div class="container">
+
 <h2>Beliebte Ausflüge in Hurghada</h2>
 
 <div class="grid">
@@ -369,39 +413,33 @@ Delfin Tour Hurghada
 </a>
 </div>
 
-<div class="card">
-<a href="https://pyramidenreisen.eu/luxor-ausflug">
-Luxor Ausflug
-</a>
 </div>
 
-<div class="card">
-<a href="https://pyramidenreisen.eu/kairo-ausflug">
-Kairo & Pyramiden Ausflug
-</a>
-</div>
+<div class="seo-section">
 
-</div>
-
-<!-- SEO TEXT -->
 <h2>Quad Safari Hurghada & Makadi Bay</h2>
 
 <p>
-Die <b>Quad Safari in Hurghada</b> und <b>Makadi Bay</b> gehört zu den beliebtesten Aktivitäten am Roten Meer.
-Besonders die <b>VIP Quad Tour am Vormittag</b> bietet angenehme Temperaturen,
-ruhige Strecken und beeindruckende Wüstenlandschaften.
+Die <b>Quad Safari in Hurghada</b> und <b>Makadi Bay</b> zählt zu den beliebtesten Aktivitäten am Roten Meer.
+Besonders die <b>VIP Quad Tour am Vormittag</b> überzeugt durch angenehme Temperaturen,
+ruhige Strecken und beeindruckende Wüstenlandschaften entlang der Küste.
 </p>
 
 <p>
-Ob <b>Quad fahren in der Wüste</b>, Fotostopps am Roten Meer oder Abenteuer in kleinen Gruppen –
-diese Tour kombiniert Natur, Action und Komfort.
-Ideal für Paare, Familien und Anfänger.
+Ob actionreiche Fahrten durch die Wüste, Fotostopps am Meer oder entspannte Touren in kleinen Gruppen –
+dieses Erlebnis verbindet Abenteuer, Natur und Komfort auf ideale Weise.
+Die Tour eignet sich perfekt für Paare, Familien und auch für Anfänger ohne Vorkenntnisse.
 </p>
 
 <p>
-Unsere <b>Quad Ausflüge in Hurghada</b> starten täglich ab Makadi Bay,
-Sahl Hasheesh, Soma Bay, El Gouna und Hurghada Hotels.
-                             </p>
+Unsere täglichen Quad Ausflüge starten ab Makadi Bay, Hurghada, Sahl Hasheesh,
+Soma Bay und weiteren Hotels am Roten Meer.
+Professionelle Guides, moderne Quads und transparente Preise sorgen für ein sicheres und angenehmes Erlebnis.
+</p>
+
+</div>
+
+</div>
 
 <a href="https://wa.me/201000000000" class="whatsapp">
 Jetzt buchen
@@ -412,4 +450,4 @@ Jetzt buchen
 </footer>
 
 </body>
-  </html>
+</html>
