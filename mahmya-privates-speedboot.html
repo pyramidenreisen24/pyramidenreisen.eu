@@ -145,21 +145,39 @@ cursor:pointer;
 font-size:14px;
 }
 
-/* TRIPADVISOR */
-.tripadvisor{
-position:fixed;
-bottom:20px;
-left:20px;
-font-size:26px;
-color:#00c853;
-text-decoration:none;
+/* ⭐ STARS BAR */
+.tripadvisor-bar{
+display:flex;
+justify-content:center;
+gap:8px;
+margin:40px auto 10px auto;
+padding:10px 0;
 }
 
-/* MOBILE */
-@media (max-width:768px){
-h1{font-size:26px}
-main{padding:20px}
-.button{display:block;margin-bottom:10px}
+.tripadvisor-bar a{
+font-size:14px;
+color:#00c853;
+text-decoration:none;
+opacity:0.9;
+}
+
+.tripadvisor-bar a:hover{
+opacity:1;
+transform:scale(1.2);
+}
+
+/* FOOTER LINKS */
+.footer-links{
+text-align:center;
+margin:30px 0;
+font-size:11px;
+opacity:0.7;
+}
+
+.footer-links a{
+color:#555;
+text-decoration:none;
+margin:0 5px;
 }
 </style>
 
@@ -167,7 +185,6 @@ main{padding:20px}
 
 <body>
 
-<!-- TOP BAR -->
 <div class="top-bar">
 Zahlung erst vor Ort möglich – keine Vorauszahlung
 </div>
@@ -180,17 +197,10 @@ Zahlung erst vor Ort möglich – keine Vorauszahlung
 jetzt unverbindlich anfragen
 </a>
 
-<!-- 🔗 ADDED TRUST LINKS -->
 <p style="font-size:12px;margin-top:10px;">
-<a href="https://visa2egypt.gov.eg/eVisa/Home" target="_blank" style="color:#fff;text-decoration:underline;">
-Egypt eVisa
-</a>
- |
-<a href="https://www.auswaertiges-amt.de/" target="_blank" style="color:#fff;text-decoration:underline;">
-Reisehinweise
-</a>
+<a href="https://visa2egypt.gov.eg/eVisa/Home" target="_blank" style="color:#fff;">Egypt eVisa</a> |
+<a href="https://www.auswaertiges-amt.de/" target="_blank" style="color:#fff;">Reisehinweise</a>
 </p>
-
 </header>
 
 <main>
@@ -210,8 +220,8 @@ Reisehinweise
 
 <h2>🏝 Leistungen</h2>
 <ul>
-<li>Privates Speedboot (nur Ihre Gruppe)</li>
-<li>Mahmya Insel im Giftun Nationalpark</li>
+<li>Privates Speedboot</li>
+<li>Mahmya Insel</li>
 <li>Schnorcheln an Korallenriffen</li>
 <li>Hoteltransfer inklusive</li>
 </ul>
@@ -219,100 +229,51 @@ Reisehinweise
 <h2>💎 Vorteile</h2>
 <ul>
 <li>100% private Tour</li>
-<li>Ideal für Familien & Paare</li>
 <li>Keine Vorauszahlung</li>
-<li>Kein Massentourismus</li>
-</ul>
-
-<h2>⚖️ Vergleich: Orange Bay vs Mahmya</h2>
-
-<table>
-<tr style="background:#0b4f6c;color:#fff;">
-<th>Kriterium</th>
-<th>Orange Bay</th>
-<th>Mahmya Island</th>
-</tr>
-
-<tr>
-<td>Atmosphäre</td>
-<td>Lebendig</td>
-<td>Ruhig & exklusiv</td>
-</tr>
-
-<tr>
-<td>Preis</td>
-<td>Günstiger</td>
-<td>Höher</td>
-</tr>
-
-<tr>
-<td>Zielgruppe</td>
-<td>Junge Reisende</td>
-<td>Familien</td>
-</tr>
-
-<tr>
-<td>Fotospots</td>
-<td>Sehr viele</td>
-<td>Hochwertig</td>
-</tr>
-</table>
-
-<h2>🏖 Orange Bay Hurghada</h2>
-
-<p>
-Orange Bay ist eine der beliebtesten Inseln in Hurghada für aktive Gäste.
-</p>
-
-<ul>
-<li>Türkisfarbenes Wasser</li>
-<li>Viele Aktivitäten & Strandbars</li>
-<li>Perfekt für Fotos</li>
-<li>Lebendige Atmosphäre</li>
-</ul>
-
-<h2>📍 Weitere Touren</h2>
-<ul>
-<li><a href="https://pyramidenreisen.eu/speedboot/">Speedboot Hurghada</a></li>
-<li><a href="https://pyramidenreisen.eu/orange-bay-hurghada.html">Orange Bay Hurghada</a></li>
-<li><a href="https://pyramidenreisen.eu/white-island-hurghada.html">White Island</a></li>
-<li><a href="https://pyramidenreisen.eu/schnellboot-inseln-hurghada.html">Schnellboot Inseln</a></li>
-<li><a href="https://pyramidenreisen.eu/giftun-speedboot.html">Giftun Insel Speedboot</a></li>
-<li><a href="https://pyramidenreisen.eu/mahmya-speedboot-tour.html">Mahmya Speedboot Tour</a></li>
-<li><a href="https://pyramidenreisen.eu/malediven-sandbank-hurghada.html">Malediven Sandbank</a></li>
-<li><a href="https://pyramidenreisen.eu/private-speedboot-hurghada.html">Private Speedboot Hurghada</a></li>
+<li>Ideal für Familien & Paare</li>
 </ul>
 
 </main>
 
-<!-- WHATSAPP BUTTON -->
-<button class="wa-open-btn" onclick="openWhatsApp()">
-💬 Hochwertig buchen
-</button>
+<!-- ⭐ TRIPADVISOR 10 LINKS -->
+<div class="tripadvisor-bar">
 
-<!-- POPUP -->
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d17274097-Reviews-Memnon_Reisen-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d16801215-Reviews-Tauchen_Hurghada_Deutsche_Tauchschule-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d670356-Reviews-Blue_Paradise_Diving_Center-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d19503367-Reviews-Sea_Base-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d4103394-Reviews-SimSim_Reisen-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d23343244-Reviews-Sun_Fun_Reisen-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d17692398-Reviews-Wonder_Travel_Egypt-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d16708499-Reviews-Bullet_Speedboats-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d10791601-Reviews-Nabq_Tours_Hurghada-Hurghada_Red_Sea_and_Sinai.html">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d2331898-Reviews-Mahmya_Island-Hurghada_Red_Sea_and_Sinai.html">★</a>
+
+</div>
+
+<!-- FOOTER LINKS (ORIGINAL) -->
+<div class="footer-links">
+<a href="https://learn.microsoft.com" target="_blank">Microsoft</a> •
+<a href="https://digitaldynamollc.com" target="_blank">Digital</a> •
+<a href="https://www.auswaertiges-amt.de" target="_blank">Auswärtiges</a> •
+<a href="https://visa2egypt.gov.eg/eVisa/Home" target="_blank">Visa</a>
+</div>
+
+<!-- WHATSAPP -->
+<button class="wa-open-btn" onclick="openWhatsApp()">💬 Buchung</button>
+
 <div class="wa-popup" id="waPopup">
   <div class="wa-box">
     <h3>WhatsApp Kontakt</h3>
-    <p>Schnelle Buchung</p>
-
     <a href="https://wa.me/201026134719">Jetzt chatten</a>
-
     <span class="close-btn" onclick="closeWhatsApp()">Schließen</span>
   </div>
 </div>
-
-<!-- TRIPADVISOR -->
-<a class="tripadvisor" target="_blank"
-href="https://www.tripadvisor.de/Attraction_Review-g297549-d33406990-Reviews-Hurghada_Excursions_Tours_in_the_Red_Sea-Hurghada_Red_Sea_and_Sinai.html">
-★
-</a>
 
 <script>
 function openWhatsApp(){
 document.getElementById("waPopup").style.display="flex";
 }
-
 function closeWhatsApp(){
 document.getElementById("waPopup").style.display="none";
 }
