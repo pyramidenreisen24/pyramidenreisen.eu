@@ -243,24 +243,4 @@ Mehr Transfer Optionen ansehen
 <a href="https://visa2egypt.gov.eg/">Visa</a>
 </div>
 
-</footer>
 
-<script>
-let time = 900;
-setInterval(() => {
- let m = Math.floor(time / 60);
- let s = time % 60;
- document.getElementById("timer").innerText = m + ":" + (s < 10 ? "0"+s : s);
- if(time > 0) time--;
-}, 1000);
-
-setInterval(() => {
- let el = document.getElementById("seats");
- if(el && parseInt(el.innerText) > 3){
-  el.innerText = parseInt(el.innerText) - 1;
- }
-}, 60000);
-</script>
-
-</body>
-</html>
