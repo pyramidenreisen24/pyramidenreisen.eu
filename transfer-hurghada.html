@@ -9,28 +9,107 @@
 
 <meta name="description" content="Privater Hurghada Transfer ab 15€ 🚖 | Flughafen & Hotel Transfer sofort verfügbar. 100% privat, keine Vorauszahlung.">
 
-<link rel="canonical" href="https://yourdomain.com/transfer">
+<link rel="canonical" href="https://pyramidenreisen.eu/transfer">
 
 <meta property="og:title" content="Hurghada Transfer ab 15€ – Privat & schnell">
 <meta property="og:description" content="Sicherer Flughafen Transfer in Hurghada ab 15€. Jetzt buchen ohne Vorauszahlung.">
 <meta property="og:type" content="website">
 
-<!-- ⭐ RATING SCHEMA -->
+<!-- ⭐ SERVICE + RATING -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "Product",
+ "@type": "Service",
  "name": "Hurghada Transfer Service",
+ "provider": {
+   "@type": "LocalBusiness",
+   "name": "Pyramiden Reisen"
+ },
+ "areaServed": "Hurghada",
  "aggregateRating": {
   "@type": "AggregateRating",
   "ratingValue": "5",
-  "reviewCount": "230"
+  "reviewCount": "287",
+  "bestRating": "5",
+  "worstRating": "1"
  }
 }
 </script>
 
-<style>
+<!-- ⭐ FAQ -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Wie viel kostet der Transfer?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Der Preis beginnt ab 15€ je nach Strecke."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ist der Transfer privat?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja, alle Transfers sind 100% privat ohne andere Gäste."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wann bezahle ich?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Die Zahlung erfolgt vor Ort ohne Vorauszahlung."
+   }
+  }
+ ]
+}
+</script>
 
+<!-- ⭐ LOCAL BUSINESS -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "Pyramiden Reisen",
+ "url": "https://pyramidenreisen.eu",
+ "telephone": "+201026134719",
+ "priceRange": "€15-€50",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Hurghada",
+  "addressCountry": "EG"
+ }
+}
+</script>
+
+<!-- ⭐ BREADCRUMB -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Startseite",
+   "item": "https://pyramidenreisen.eu"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Hurghada Transfer",
+   "item": "https://pyramidenreisen.eu/transfer"
+  }
+ ]
+}
+</script>
+
+<style>
 body{
 margin:0;
 font-family:Arial;
@@ -57,25 +136,17 @@ color:#004080;
 font-size:34px;
 }
 
+h2{
+color:#023e8a;
+margin-top:10px;
+}
+
 .card{
 background:#fff;
 padding:20px;
 margin-top:18px;
 border-radius:12px;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
-}
-
-.cta{
-display:block;
-text-align:center;
-background:#0077b6;
-color:#fff;
-padding:18px;
-margin-top:15px;
-border-radius:12px;
-font-weight:bold;
-text-decoration:none;
-font-size:18px;
 }
 
 .email-cta{
@@ -100,7 +171,6 @@ font-weight:bold;
 color:#0a7f5a;
 }
 
-/* FLOAT WHATSAPP (ONE ONLY) */
 .whatsapp{
 position:fixed;
 right:15px;
@@ -123,38 +193,36 @@ z-index:999;
 100%{transform:translateY(0);}
 }
 
-/* STAR */
-.star-footer{
-text-align:center;
-margin-top:40px;
-}
-
-.star-footer a{
-display:inline-flex;
-width:34px;
-height:34px;
-align-items:center;
-justify-content:center;
-border:1px solid #ddd;
-border-radius:50%;
-font-size:16px;
-color:#00aa6c;
-text-decoration:none;
-opacity:0.85;
-}
-
 .links{
-font-size:12px;
+font-size:13px;
 text-align:center;
 color:#666;
-margin-top:10px;
+margin-top:30px;
+line-height:2;
 }
 
 .links a{
 color:#0077b6;
-margin:0 5px;
+margin:0 6px;
+text-decoration:none;
 }
 
+/* ⭐ STAR SECTION */
+.star-footer{
+text-align:center;
+margin-top:30px;
+}
+
+.star-footer a{
+display:inline-flex;
+width:30px;
+height:30px;
+align-items:center;
+justify-content:center;
+color:#00aa6c;
+text-decoration:none;
+font-size:16px;
+}
 </style>
 
 </head>
@@ -169,15 +237,6 @@ margin:0 5px;
 
 <h1>Hurghada Transfer Service</h1>
 
-<!-- LINKS -->
-<div class="links">
-<a href="https://visa2egypt.gov.eg/eVisa/Home">eVisa</a> |
-<a href="https://www.auswaertiges-amt.de">Reisehinweise</a> |
-<a href="/sahl-hasheesh-transfer">Sahl</a> |
-<a href="/makadi-bay-transfer">Makadi</a> |
-<a href="/safaga-transfer">Safaga</a>
-</div>
-
 <div class="card">
 
 <div class="price">
@@ -188,9 +247,8 @@ margin:0 5px;
 Schneller privater Transfer in Hurghada & Umgebung.
 </p>
 
-<!-- EMAIL BUTTON CHANGED -->
 <a class="email-cta" href="mailto:sonnenwelle.reisen@gmx.de?subject=Transfer%20Hurghada">
-jetzt unverbindlich anfragen
+Jetzt unverbindlich anfragen
 </a>
 
 </div>
@@ -210,7 +268,26 @@ jetzt unverbindlich anfragen
 
 <div class="card">
 
-<h2>❓ FAQ</h2>
+<h2>🌍 Beliebte Ausflüge</h2>
+
+<ul>
+<li><a href="/quad-safari-hurghada">Quad Safari Hurghada</a></li>
+<li><a href="/buggy-safari-hurghada">Buggy Safari</a></li>
+<li><a href="/delfin-tour-hurghada">Delfin Tour</a></li>
+<li><a href="/parasailing-hurghada">Parasailing</a></li>
+<li><a href="/tauchen-hurghada">Tauchen</a></li>
+<li><a href="/angeln-hurghada">Angeln</a></li>
+<li><a href="/luxor-ausflug">Luxor Ausflug</a></li>
+<li><a href="/kairo-ausflug">Kairo Ausflug</a></li>
+<li><a href="/jetski-hurghada">Jetski</a></li>
+<li><a href="/vip-transfer-hurghada">VIP Transfer</a></li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>❓ Häufige Fragen</h2>
 
 <p><b>Preis?</b><br>Ab 15€</p>
 <p><b>Privat?</b><br>Ja</p>
@@ -220,14 +297,34 @@ jetzt unverbindlich anfragen
 
 </div>
 
-<!-- STAR -->
+<!-- ⭐ STARS -->
 <div class="star-footer">
-<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d33406990-Reviews-Hurghada_Excursions_Tours_in_the_Red_Sea-Hurghada_Red_Sea_and_Sinai.html">
-★
-</a>
+
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d17274097-Reviews-Memnon_Reisen-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d16801215-Reviews-Tauchen_Hurghada_Deutsche_Tauchschule-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d670356-Reviews-Blue_Paradise_Diving_Center-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d19503367-Reviews-Sea_Base-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d4103394-Reviews-SimSim_Reisen-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d23343244-Reviews-Sun_Fun_Reisen-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d17692398-Reviews-Wonder_Travel_Egypt-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d16708499-Reviews-Bullet_Speedboats-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d10791601-Reviews-Nabq_Tours_Hurghada-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+<a href="https://www.tripadvisor.de/Attraction_Review-g297549-d2331898-Reviews-Mahmya_Island-Hurghada_Red_Sea_and_Sinai.html" target="_blank">★</a>
+
 </div>
 
-<!-- SINGLE WHATSAPP FLOAT -->
+<!-- FOOTER -->
+<footer>
+<div class="links">
+
+<a href="https://learn.microsoft.com" target="_blank">Microsoft</a> •
+<a href="https://digitaldynamollc.com" target="_blank">Digital</a> •
+<a href="https://www.auswaertiges-amt.de" target="_blank">Auswärtiges</a> •
+<a href="https://visa2egypt.gov.eg/eVisa/Home" target="_blank">Visa</a>
+
+</div>
+</footer>
+
 <a class="whatsapp" href="https://wa.me/201026134719">WhatsApp</a>
 
 </body>
