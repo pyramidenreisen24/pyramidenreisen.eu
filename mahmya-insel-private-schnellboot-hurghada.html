@@ -86,7 +86,7 @@
 }
 </script>
 
-<!-- ================= FAQ ================= -->
+<!-- ================= FAQ SCHEMA ================= -->
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -124,10 +124,55 @@ header{background:#0077b6;color:#fff;text-align:center;padding:18px;font-size:22
 h1{text-align:center;color:#023e8a}
 h2{color:#0077b6}
 a{color:#0077b6;text-decoration:none}
-.tripadvisor{text-align:center;margin-top:40px;font-size:18px;line-height:2}
+
+.tripadvisor{
+text-align:center;
+margin-top:40px;
+font-size:18px;
+line-height:2;
+}
+
 .cta-top{text-align:center;margin:15px 0}
-.cta-top a{background:#ffb703;color:#000;padding:14px 20px;border-radius:10px;font-weight:bold;display:inline-block}
-footer{background:#111;color:#aaa;text-align:center;padding:25px;margin-top:30px}
+.cta-top a{
+background:#ffb703;
+color:#000;
+padding:14px 20px;
+border-radius:10px;
+font-weight:bold;
+display:inline-block;
+}
+
+.whatsapp{
+position:fixed;
+right:15px;
+bottom:20px;
+z-index:9999;
+}
+
+.whatsapp a{
+background:#25D366;
+color:#fff;
+padding:12px 14px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+}
+
+.star{
+text-align:center;
+font-size:18px;
+color:#2ecc71;
+margin-top:20px;
+}
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
 footer a{color:#777;text-decoration:none}
 </style>
 
@@ -154,20 +199,17 @@ Mahmya Insel – Premium Speedboot Erlebnis
 </a>
 </div>
 
-<!-- EXPERIENCE -->
+<!-- CONTENT -->
 <div class="card">
 <h2>🌅 Reiseerlebnis</h2>
 <p>Die Reise beginnt früh am Morgen in Hurghada. Das Meer ist ruhig und das private Speedboot wartet bereits im Hafen.</p>
-<p>Während der Fahrt öffnet sich das Rote Meer in voller Schönheit.</p>
 </div>
 
-<!-- MARINE -->
 <div class="card">
 <h2>🌊 Marine Ökosystem</h2>
 <p>Das Rote Meer besitzt über 1200 Fischarten und einzigartige Korallenriffe.</p>
 </div>
 
-<!-- SEASON -->
 <div class="card">
 <h2>🌤️ Beste Reisezeit</h2>
 <p>Frühling = klare Sicht</p>
@@ -176,7 +218,6 @@ Mahmya Insel – Premium Speedboot Erlebnis
 <p>Winter = ruhige Exklusivität</p>
 </div>
 
-<!-- CLUSTER -->
 <div class="card">
 <h2>🔗 Touren in Hurghada</h2>
 <p>
@@ -187,16 +228,42 @@ Mahmya Insel – Premium Speedboot Erlebnis
 </p>
 </div>
 
-<!-- FAQ -->
-<div class="card">
-<h2>❓ Häufige Fragen (FAQ)</h2>
-<p><b>Ist die Tour privat?</b><br>Ja, komplett privat.</p>
-<p><b>Kann man Delfine sehen?</b><br>Sehr häufig.</p>
-<p><b>Wie lange dauert die Tour?</b><br>2–6 Stunden.</p>
-<p><b>Wie viel kostet es?</b><br>Ab ca. 40€ pro Person.</p>
-</div>
+<!-- FAQ UI -->
+<div class="card faq">
+<h2>❓ Häufig gestellte Fragen (FAQ)</h2>
+
+<p><b>Ist die Mahmya Insel Tour privat?</b><br>Ja, vollständig privat.</p>
+<p><b>Wie viel kostet die Tour?</b><br>Ab ca. 40€ pro Person.</p>
+<p><b>Was ist der Unterschied zu Orange Bay?</b><br>Mahmya ist exklusiver und ruhiger.</p>
+<p><b>Kann man Delfine sehen?</b><br>Sehr häufig im Roten Meer.</p>
+<p><b>Ist Ausrüstung inklusive?</b><br>Ja, komplette Schnorchelausrüstung.</p>
+<p><b>Beste Reisezeit?</b><br>März–Juni und September–November.</p>
+<p><b>Wie lange dauert es?</b><br>2–6 Stunden.</p>
+<p><b>Für Kinder geeignet?</b><br>Ja, familienfreundlich.</p>
 
 </div>
+
+<!-- STAR (FIXED INSIDE FLOW) -->
+<div class="star">★</div>
+
+</div>
+
+<!-- WHATSAPP -->
+<div class="whatsapp">
+<a href="https://wa.me/201026134719">WhatsApp</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Pyramiden Reisen24</p>
+
+<div>
+<a href="https://learn.microsoft.com">Microsoft</a> •
+<a href="https://digitaldynamollc.com">Digital</a> •
+<a href="https://www.auswaertiges-amt.de">Reisehinweise</a> •
+<a href="https://visa2egypt.gov.eg/eVisa/Home">Visum Ägypten</a>
+</div>
+</footer>
 
 </body>
 </html>
